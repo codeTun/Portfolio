@@ -1,0 +1,18 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: var(--spacing);
+}
+
+.error .pageTitle {
+  border-bottom-color: var(--hl2-color);
+}
+
+.error-description {
+  color: var(--hl2-color);
+}
+
+.error .btn {
+  margin-top: 32px;
+}

@@ -1,0 +1,218 @@
+/* --- MOBILE STYLES --- */
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  margin-top: var(--spacing);
+}
+
+.projectCard {
+  color: white;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  flex-direction: column;
+  padding: 0 !important;
+  cursor: pointer;
+}
+
+.row {
+  padding: 0;
+  margin: 0;
+}
+
+.textWrap {
+  transition: all 0.9s ease-in-out;
+  z-index: 1;
+}
+
+.projectLink {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.imageContainer img {
+  height: 12em;
+  margin-top: 25px;
+  transition: all 1.3s ease-in-out;
+}
+
+.tech {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.viewWork {
+  font-size: 14px;
+}
+
+.projectTitle {
+  font-size: 24px;
+  padding: 10px 0;
+}
+
+.projectCard::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0.3;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* .closeModal {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.closeModal:hover {
+  filter: brightness(100);
+} */
+
+/* .modalTitle {
+  text-align: left;
+  margin-bottom: var(--sm-spacing);
+  color: white;
+  white-space: nowrap;
+  font-size: 30px;
+} */
+
+.projectDetails {
+  background-color: var(--bg2-color);
+  text-align: center;
+  padding: var(--spacing) 10px;
+  margin: 0;
+  margin-bottom: var(--spacing);
+}
+
+.projectImage {
+  margin-bottom: var(--spacing);
+  padding: 0px;
+}
+
+.projectBody {
+  line-height: 2;
+  text-align: left;
+  color: var(--secondary-text-color);
+}
+
+.tech {
+  margin-bottom: var(--sm-spacing);
+  text-align: left;
+}
+
+.paragraph {
+  margin-bottom: 1em;
+}
+
+/* .modalBtns {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.modalBtns .btn {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  width: 200px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalBtns .btn:last-child {
+  background-color: white;
+  color: black;
+  margin-left: 10px;
+}
+
+.modalBtns .btn:last-child:hover {
+  background-color: var(--hl-color);
+  color: var(--text-color);
+} */
+
+.technology {
+  background-color: #4ea6a027;
+  margin-right: 5px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: var(--hl-color);
+}
+
+/* --- MEDIA QUEIRES --- */
+
+@media (min-width: 750px) {
+  .projectCard {
+    flex-direction: row;
+    padding: var(--sm-spacing) !important;
+    height: 350px;
+  }
+
+  .imageContainer {
+    transform: translateX(30%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .projectCard:hover .imageContainer {
+    transform: translateX(-70%);
+  }
+
+  .projectCard:hover .textWrap {
+    transform: translateX(-250%);
+  }
+
+  .projectCard:hover::before {
+    opacity: 0;
+  }
+
+  .projectCard:hover .imageContainer img {
+    scale: 1.4;
+  }
+
+  .imageContainer {
+    transform: translateX(30%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .textWrap {
+    text-shadow: none;
+  }
+
+  .projectTitle {
+    font-size: 30px;
+    padding: 10px 0;
+  }
+
+  .viewWork {
+    font-size: 16px;
+  }
+
+  .tech {
+    font-size: 14px;
+  }
+
+  .projectDetails {
+    padding: var(--spacing);
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projectImage {
+    margin-bottom: 0;
+  }
+
+  .projectBodyContainer {
+    padding: 0 var(--spacing);
+  }
+}
