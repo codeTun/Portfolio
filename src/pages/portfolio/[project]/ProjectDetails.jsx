@@ -28,7 +28,9 @@ const ProjectDetails = () => {
   const { projectTitle } = useParams();
 
   // Find the project in the data using the title
-  const project = projects.find((project) => project.title.toLowerCase() === projectTitle);
+  const project = projects.find(
+    (project) => project.title.toLowerCase() === projectTitle
+  );
 
   // If the project is not found, display the PageNotFound component
   if (!project) {
@@ -55,7 +57,11 @@ const ProjectDetails = () => {
                     className="technology"
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.5, delay: i * 0.1, ease: "easeInOut" }}
+                    transition={{
+                      duration: 0.5,
+                      delay: i * 0.1,
+                      ease: "easeInOut",
+                    }}
                   >
                     {technology + " "}
                   </motion.span>
@@ -70,7 +76,11 @@ const ProjectDetails = () => {
                     key={i}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: i * 0.3, ease: "easeInOut" }}
+                    transition={{
+                      duration: 0.5,
+                      delay: i * 0.3,
+                      ease: "easeInOut",
+                    }}
                   >
                     {paragraph}
                   </motion.p>
@@ -82,12 +92,15 @@ const ProjectDetails = () => {
                 style={{ display: "flex", gap: "10px" }}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: project.body.split("\n").length * 0.3 }}
+                transition={{
+                  duration: 0.5,
+                  delay: project.body.split("\n").length * 0.3,
+                }}
               >
-                <a href={project.github}>
+                <a href={project.github} target="blank">
                   <Button name="View Code" />
                 </a>
-                <a href={project.deployed}>
+                <a href={project.deployed} target="blank">
                   <Button name="View Site" />
                 </a>
                 <Link to="/portfolio">
