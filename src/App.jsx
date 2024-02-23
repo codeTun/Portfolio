@@ -10,6 +10,7 @@ import ProjectDetails from "./pages/portfolio/[project]/ProjectDetails";
 import Resume from "./pages/resume/Resume";
 import Contact from "./pages/contact/Contact";
 import PageNotFound from "./pages/404/PageNotFound";
+import { Analytics } from "@vercel/analytics/react"
 
 /**
  * Instructions for Customizing the Portfolio
@@ -78,6 +79,8 @@ function App() {
 
   return (
     <>
+      <Analytics />
+
       {showLoader ? (
         // Show loader until initial route is loaded
         <Loader setShowLoader={setShowLoader} />
@@ -109,6 +112,7 @@ function App() {
         </>
       )}
     </>
+    
   );
 }
 
