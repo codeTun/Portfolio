@@ -23,7 +23,6 @@ const Form = () => {
     email: "",
     subject: "",
     message: "",
-    access_key: process.env.CONTACT_ACCESS_KEY,
   });
 
   const handleChange = (e) => {
@@ -72,15 +71,19 @@ const Form = () => {
 
     setSending(true);
 
-    const data = JSON.stringify(formData);
-
     fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
       },
-      body: data,
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        access_key: process.env.REACT_APP_CONTACT_ACCESS_KEY,
+      }),
     })
       .then((res) => res.json())
       .then((data) => {

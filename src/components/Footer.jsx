@@ -49,17 +49,18 @@ const Footer = () => {
       <SocialIcons />
 
       {/* GitHub repository link */}
-      <a className="footer-link" href="#">
+
+      <a className="footer-link" href="https://github.com/codeTun/Portfolio">
         <span>
           <AiOutlineStar /> {gitHubInfo.stars} <BiGitRepoForked />
           {gitHubInfo.forks} - Give this project a star!
         </span>
         <p>
-          <span>▷</span> Designed and built by Elazheri Iheb &copy; {currentYear}
+          <span>▷</span> Designed and built by Elazheri Iheb &copy;{" "}
+          {currentYear}
         </p>
         <p>All views and work are my own</p>
       </a>
-
     </footer>
   );
 };
