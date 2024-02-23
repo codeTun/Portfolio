@@ -1,6 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import landingImage from "../images/suit.png";
+import whitemode from "../images/suit.png";
 import SocialIcons from "./SocialIcons";
 
 const Hero = ({ name }) => {
@@ -18,9 +19,9 @@ const Hero = ({ name }) => {
     landingImage: {
       position: "absolute",
       bottom: "0",
-      opacity: "0.3",
-      mixBlendMode: "lighten",
-      height: "80%",
+      opacity: "0.2",
+
+      height: "82%",
     },
 
     textContainer: {
@@ -29,16 +30,16 @@ const Hero = ({ name }) => {
       letterSpacing: "1px",
       textAlign: "center",
       zIndex: "1",
-      color: "var(--text-color)",  // Use the defined text color
-      textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",  // Improved text shadow
-      padding: "20px",  // Added padding for better spacing
+      color: "var(--text-color)", // Use the defined text color
+      textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)", // Improved text shadow
+      padding: "20px", // Added padding for better spacing
     },
 
     name: {
-      color: "var(--hl-color)",  // Use the defined highlight color for the name
+      color: "var(--hl-color)", // Use the defined highlight color for the name
       fontWeight: "700",
       marginTop: "-100px",
-      paddingBottom: "20px",  // Adjusted padding for better spacing
+      paddingBottom: "20px", // Adjusted padding for better spacing
     },
   };
 
@@ -72,7 +73,10 @@ const Hero = ({ name }) => {
               cursor: "",
             }}
             onInit={(typewriter) => {
-              typewriter.changeDelay(50).typeString("Software Engineer").start();
+              typewriter
+                .changeDelay(50)
+                .typeString("Software Engineer")
+                .start();
             }}
           />
         </motion.div>
@@ -81,8 +85,8 @@ const Hero = ({ name }) => {
       <div className="image-container">
         <motion.img
           className="landingImage"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.6 }}  // Adjust the opacity to make the image more visible
+          initial={{ opacity: 0.5 }}
+          animate={{ opacity: 0.9 }} // Adjust the opacity to make the image more visible
           transition={{ delay: 1, duration: 1.5, ease: "easeInOut" }}
           style={styles.landingImage}
           src={landingImage}

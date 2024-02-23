@@ -18,17 +18,18 @@ const LightDarkToggle = () => {
   };
 
   // Original colors
-  /*
-    --bg-color: #131a22;
-    --bg2-color: #232f3e19;
-    --hl-color: #48a3c6;
-    --hl2-color: #e47911;
-    --text-color: #f3f3f3;
-    --secondary-text-color: #999999;
-    --grey: #9f9f9f76;
-    --spacing: 50px;
-    --sm-spacing: 30px;
-      */
+
+    // eslint-disable-next-line no-unused-expressions
+    "--bg-color: #131a22",
+    "--bg2-color: #232f3e19",
+    "--hl-color: #48a3c6",
+    "--hl2-color: #e47911",
+    "--text-color: #f3f3f3",
+    "--secondary-text-color: #999999",
+    "--grey: #9f9f9f76",
+    "--spacing: 50px",
+    "--sm-spacing: 30px"
+
 
   // Apply the selected mode's colors using CSS custom properties
   useEffect(() => {
