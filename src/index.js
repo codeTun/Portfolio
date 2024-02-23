@@ -7,6 +7,7 @@ import "./pages/portfolio/portfolio.css";
 import "./pages/resume/resume.css";
 import "./pages/contact/contact.css";
 import "./pages/404/pageNotFound.css";
+import { Analytics } from "@vercel/analytics/react";
 
 import App from "./App";
 
@@ -17,6 +18,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
+      <Analytics />
     </BrowserRouter>
   </React.StrictMode>
 );
