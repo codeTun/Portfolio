@@ -78,11 +78,11 @@ const Form = () => {
         Accept: "application/json",
       },
       body: JSON.stringify({
+        apikey: "c693d149-ebd5-4c56-bec7-57654dfc3e85",
         name: formData.name,
         email: formData.email,
         subject: formData.subject,
         message: formData.message,
-        access_key: process.env.REACT_APP_CONTACT_ACCESS_KEY,
       }),
     })
       .then((res) => res.json())
