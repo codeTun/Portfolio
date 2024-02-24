@@ -10,7 +10,7 @@ import { MdDarkMode } from "react-icons/md";
 
 const LightDarkToggle = () => {
   // State to track the current mode (light or dark)
-  const [islightMode, setLightMode] = useState(false);
+  const [islightMode, setLightMode] = useState(true);
 
   // Function to toggle between light and dark mode
   const toggleMode = () => {
