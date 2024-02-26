@@ -206,6 +206,15 @@ header {
   color: var(--text-color);
   margin-left: 10px;
   display: none;
+  display: block !important;
+}
+
+@media screen and (max-width: 768px) {
+  .toggleMode {
+    position: fixed;
+    top: 40px;
+    right: 110px;
+  }
 }
 
 .toggleIcon {
