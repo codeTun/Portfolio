@@ -18,7 +18,10 @@ const NavLinks = () => {
   return (
     <>
       {/* Menu toggle button */}
-      <button className="dropdown-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+      <button
+        className="dropdown-toggle"
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+      >
         {isMenuOpen ? (
           <img className="closeMenu" src={closeMenu} alt="Close" />
         ) : (
@@ -30,6 +33,7 @@ const NavLinks = () => {
       {/* Navigation links */}
       <nav className={`links ${isMenuOpen ? "open" : "closed"}`}>
         <motion.div
+          className="nav-item"
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 2.4, duration: 0.5, type: "spring" }}
@@ -41,9 +45,22 @@ const NavLinks = () => {
         </motion.div>
 
         <motion.div
+          className="nav-item"
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 2.3, duration: 0.5, type: "spring" }}
+        >
+          {/* About link */}
+          <NavLink to="/about" onClick={() => setIsMenuOpen(false)}>
+            About
+          </NavLink>
+        </motion.div>
+
+        <motion.div
+          className="nav-item"
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 2.2, duration: 0.5, type: "spring" }}
         >
           {/* Portfolio link */}
           <NavLink to="/portfolio" onClick={() => setIsMenuOpen(false)}>
@@ -52,9 +69,10 @@ const NavLinks = () => {
         </motion.div>
 
         <motion.div
+          className="nav-item"
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 2.2, duration: 0.5, type: "spring" }}
+          transition={{ delay: 2.1, duration: 0.5, type: "spring" }}
         >
           {/* Contact link */}
           <NavLink to="/contact" onClick={() => setIsMenuOpen(false)}>

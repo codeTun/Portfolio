@@ -11,6 +11,7 @@ import Resume from "./pages/resume/Resume";
 import Contact from "./pages/contact/Contact";
 import PageNotFound from "./pages/404/PageNotFound";
 import { Analytics } from "@vercel/analytics/react"
+import AboutMe from './components/AboutMe'; // adjust the path as necessary
 
 
 
@@ -72,6 +73,7 @@ function App() {
             <Route path="/" element={<Landing name={personalDetails.name} tagline={personalDetails.tagline} />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/resume" element={<Resume brand={personalDetails.brand} />} />
+            <Route path="/about" element={<AboutMe />} />
 
             <Route
               path="/contact"

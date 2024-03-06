@@ -1,49 +1,55 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Typewriter from "typewriter-effect";
-import landingImage from "../images/suit.png";
+import landingImage from "../images/suit2.jpg";
 import SocialIcons from "./SocialIcons";
 
 const Hero = ({ name }) => {
   const controls = useAnimation();
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     controls.start({ scale: 1.1, opacity: 1 });
+    window.addEventListener("resize", handleWindowResize);
+    return () => window.removeEventListener("resize", handleWindowResize);
   }, [controls]);
+
+  const handleWindowResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
 
   const styles = {
     landingImage: {
       position: "absolute",
       margin: "auto",
       opacity: "0.2",
-      width: "100%",
-      maxWidth: "500px",
+      width: "500px", // Set a fixed width
 
-      "@media (max-width: 768px)": {
-        height: "auto",
-      },
-      "@media (min-width: 1024px)": {
-        maxWidth: "800px",
-      },
+      maxWidth: windowWidth <= 768 ? "500px" : "800px",
+      height: windowWidth <= 768 ? "auto" : undefined, // Set a fixed height
+      borderRadius: "50%", // Make the image a circle
+      objectFit: "cover",
     },
 
     textContainer: {
-      display: "flex",
+      
       flexDirection: "column",
       letterSpacing: "1px",
       textAlign: "center",
       zIndex: "1",
       color: "var(--text-color)",
       textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
-      padding: "20px",
-      marginTop: "-100px",
+      padding: "23px",
+      marginTop: "-70px",
+      marginRight: "50px",
     },
 
     name: {
       color: "var(--hl-color)",
       fontWeight: "700",
       marginTop: "-100px",
-      paddingBottom: "20px",
+      paddingBottom: "30px",
+      
     },
   };
 

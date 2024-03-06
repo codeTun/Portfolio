@@ -2,6 +2,16 @@ import { motion } from "framer-motion";
 
 const SocialIcons = () => {
   const styles = {
+    socialIcons: {
+      position: "fixed", // Make the icons stick to the viewport
+      width: "100%", // Make the container take up the full width
+      display: "flex", // Align the icons horizontally
+      justifyContent: "center", // Center the icons horizontally
+      left: "0", // Position the container at the left
+      right: "0", // Position the container at the right
+  // Position the container at the bottom
+      margin: "auto"
+    },
     icon: {
       textDecoration: "none",
       fontSize: "22px",
