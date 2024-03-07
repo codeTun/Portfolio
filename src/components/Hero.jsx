@@ -47,13 +47,13 @@ const Hero = ({ name }) => {
       zIndex: "1",
       color: "var(--text-color)",
       textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
-      padding: "20px",
+      padding: "18px",
       fontSize: windowWidth <= 768 ? "1.5em" : "1.5em", // Adjust the text size based on the window width
     },
     name: {
       color: "var(--hl-color)",
       fontWeight: "700",
-      paddingBottom: "20px",
+      paddingBottom: "10px",
       fontSize: windowWidth <= 768 ? "1.8em" : "2.5em", // Adjust the text size based on the window width
     },
   };
