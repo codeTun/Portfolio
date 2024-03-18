@@ -26,7 +26,11 @@ const ProjectCard = ({ title, image, color, id }) => {
   };
 
   return (
-    <Link to={`/portfolio/${title.toLowerCase()}`} key={id} className="projectLink col-12 col-lg-6">
+    <Link
+      to={`/portfolio/${title.toLowerCase()}`}
+      key={id}
+      className="projectLink col-12 col-lg-6"
+    >
       <motion.div
         ref={ref}
         className=""

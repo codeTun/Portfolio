@@ -10,10 +10,8 @@ import ProjectDetails from "./pages/portfolio/[project]/ProjectDetails";
 import Resume from "./pages/resume/Resume";
 import Contact from "./pages/contact/Contact";
 import PageNotFound from "./pages/404/PageNotFound";
-import { Analytics } from "@vercel/analytics/react"
-import AboutMe from './components/AboutMe'; // adjust the path as necessary
-
-
+import { Analytics } from "@vercel/analytics/react";
+import AboutMe from "./components/AboutMe"; // adjust the path as necessary
 
 function App() {
   // Personal details for the user
@@ -54,7 +52,8 @@ function App() {
 
     // Listen for visibility change events
     window.addEventListener("visibilitychange", handleTabChange);
-    return () => window.removeEventListener("visibilitychange", handleTabChange);
+    return () =>
+      window.removeEventListener("visibilitychange", handleTabChange);
   }, [location, originalTitle]);
 
   return (
@@ -70,9 +69,20 @@ function App() {
           <Header />
           {/* Define routes */}
           <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<Landing name={personalDetails.name} tagline={personalDetails.tagline} />} />
+            <Route
+              path="/"
+              element={
+                <Landing
+                  name={personalDetails.name}
+                  tagline={personalDetails.tagline}
+                />
+              }
+            />
             <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/resume" element={<Resume brand={personalDetails.brand} />} />
+            <Route
+              path="/resume"
+              element={<Resume brand={personalDetails.brand} />}
+            />
             <Route path="/about" element={<AboutMe />} />
 
             <Route
@@ -86,14 +96,16 @@ function App() {
               }
             />
             <Route path="/page-not-found" element={<PageNotFound />} />
-            <Route path="/portfolio/:projectTitle" element={<ProjectDetails />} />
+            <Route
+              path="/portfolio/:projectTitle"
+              element={<ProjectDetails />}
+            />
             {/* Fallback route for unknown paths */}
             <Route path="*" element={<Navigate to="/page-not-found" />} />
           </Routes>
         </>
       )}
     </>
-    
   );
 }
 
