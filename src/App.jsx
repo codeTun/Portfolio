@@ -10,7 +10,7 @@ import ProjectDetails from "./pages/portfolio/[project]/ProjectDetails";
 import Resume from "./pages/resume/Resume";
 import Contact from "./pages/contact/Contact";
 import PageNotFound from "./pages/404/PageNotFound";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics";
 import AboutMe from "./components/AboutMe"; // adjust the path as necessary
 
 function App() {
