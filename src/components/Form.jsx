@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import validator from "email-validator";
 import Button from "./Button";
+import apiConfig from "../pages/contact/apiConfig";
 
 const Form = () => {
   const [ref, inView] = useInView({
@@ -71,14 +72,14 @@ const Form = () => {
 
     setSending(true);
 
-    fetch("https://api.web3forms.com/submit", {
+    fetch(apiConfig.endpoint, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
       },
       body: JSON.stringify({
-        apikey: "c693d149-ebd5-4c56-bec7-57654dfc3e85",
+        apikey: apiConfig.apiKey,
         name: formData.name,
         email: formData.email,
         subject: formData.subject,
@@ -129,7 +130,7 @@ const Form = () => {
   };
 
   return (
-    <motion.form
+    <form
       action="https://api.web3forms.com/submit"
       method="POST"
       ref={ref}
@@ -219,7 +220,7 @@ const Form = () => {
           }
         />
       </motion.div>
-    </motion.form>
+    </form>
   );
 };
 
