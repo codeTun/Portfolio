@@ -4,12 +4,7 @@ import { motion } from "framer-motion";
 import LightDarkToggle from "./LightDarkToggle";
 import openMenu from "../images/open.svg";
 import closeMenu from "../images/close.svg";
-
-/**
- * Represents navigation links and menu toggles.
- *
- * @component
- */
+import DownloadResumeButton from "../components/DownloadResumeButton";
 
 const NavLinks = () => {
   // State to track whether the menu is open or closed
@@ -19,7 +14,7 @@ const NavLinks = () => {
     <>
       {/* Menu toggle button */}
       <button
-        className="dropdown-toggle"
+        className="dropdown-toggle mr-5"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         {isMenuOpen ? (
@@ -30,8 +25,11 @@ const NavLinks = () => {
       </button>
       {/* Light/Dark mode toggle */}
       <LightDarkToggle />
+      <div className="hidden md:block">
+        <DownloadResumeButton />
+      </div>
       {/* Navigation links */}
-      <nav className={`links ${isMenuOpen ? "open" : "closed"}`}>
+      <nav className={`links ${isMenuOpen ? "open" : "closed"} mr-3`}>
         <motion.div
           className="nav-item"
           initial={{ x: -100, opacity: 0 }}
@@ -79,6 +77,9 @@ const NavLinks = () => {
             Contact
           </NavLink>
         </motion.div>
+        <div className={`${isMenuOpen ? "block" : "hidden"} md:hidden`}>
+          <DownloadResumeButton />
+        </div>
       </nav>
     </>
   );

@@ -110,6 +110,7 @@ const Hero = ({ name }) => {
       >
         <SocialIcons />
       </motion.div>
+      
     </>
   );
 };

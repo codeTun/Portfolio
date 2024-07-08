@@ -8,6 +8,7 @@ import "./pages/resume/resume.css";
 import "./pages/contact/contact.css";
 import "./pages/404/pageNotFound.css";
 import { Analytics } from "@vercel/analytics/react";
+import 'flowbite/dist/flowbite.css';
 
 import App from "./App";
 
