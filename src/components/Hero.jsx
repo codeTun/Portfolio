@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Typewriter from "typewriter-effect";
-import landingImage from "../images/suit2.jpg";
+import landingImage from "../images/iheb.jpg";
 import SocialIcons from "./SocialIcons";
 
 const Hero = ({ name }) => {

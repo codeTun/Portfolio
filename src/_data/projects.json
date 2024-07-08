@@ -57,5 +57,18 @@
     "deployed": "https://mdyeates.github.io/coding-quiz/",
     "bgcolor": "#f85781",
     "id": "4"
+  },
+  {
+    "title": "InnovaMarkets",
+    "description": "Its a tender call plateform for private sector , this is my final year project in the university ISIMM",
+    "image": "/projectImages/Student.png",
+    "image2": "/projectImages/WIE-Logo.png",
+    "image3": "/projectImages/team3.png",
+    "technologies": ["Angular", "Bootstrap", "Springboot","Postgres"],
+    "body": "IEEE WIE: Empowering Primary Students and Teachers for SuccessIEEE WIE isn't just a platform—it's a transformative tool for primary education, designed to empower both students and teachers with innovative resources and collaborative tools.For Teachers:With IEEE WIE, educators gain access to a comprehensive suite of classroom management tools, enabling seamless lesson planning, assignment tracking, and student assessment. Our platform facilitates secure communication between teachers, students, and parents, fostering collaboration and engagement in the learning process.For Students:IEEE WIE offers primary students an interactive learning experience like no other. Through our platform, students can explore dynamic educational resources, participate in engaging activities, and receive personalized feedback to support their academic growth. With IEEE WIE, learning becomes an exciting journey of discovery and achievement.Key Features of IEEE WIE:Comprehensive Classroom Management: Organize lessons, track assignments, and monitor student progress with ease.Secure Communication Channels: Foster collaboration and communication between teachers, students, and parents in a safe and secure environment.Interactive Learning Resources: Engage students with interactive lessons, educational games, and multimedia content tailored to their interests and learning styles.Personalized Learning Pathways: Adapt instruction to meet the individual needs and abilities of each student, providing targeted support and enrichment opportunities.",
+    "github": "https://github.com/codeTun/",
+    "deployed": "#",
+    "bgcolor": "#8900EE",
+    "id": "4"
   }
 ]

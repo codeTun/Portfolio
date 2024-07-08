@@ -3,13 +3,15 @@ import { motion } from "framer-motion";
 const SocialIcons = () => {
   const styles = {
     socialIcons: {
-      width: "100%", // Make the container take up the full width
-      display: "flex", // Align the icons horizontally
-      justifyContent: "center", // Center the icons horizontally
-      left: "0", // Position the container at the left
-      right: "0", // Position the container at the right
-      bottom: "0", // Position the container at the bottom
-      margin: "auto",
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "center",
+      alignItems: "center",
+      position: "fixed", // Use fixed to keep it at the bottom across all scroll positions
+      left: "0",
+      right: "0",
+      bottom: "0",
+      width: "100%", // Ensure it spans the full width
     },
     icon: {
       textDecoration: "none",
@@ -31,9 +33,9 @@ const SocialIcons = () => {
         onClick={() => openLinkInNewWindow("https://github.com/codeTun")}
       >
         <motion.i
-          initial={{ y: 100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 1.8, duration: 0.5, type: "spring" }}
+          // initial={{ x: 100, y: 0, opacity: 0 }}
+          // animate={{ x: 100, y: 0, opacity: 1 }}
+          // transition={{ delay: 1.8, duration: 0.5, type: "spring" }}
           className="fa-brands fa-github"
           aria-hidden="true"
           title="Elazheri Iheb' GitHub Profile"
