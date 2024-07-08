@@ -5,6 +5,7 @@ import validator from "email-validator";
 import Button from "./Button";
 import apiConfig from "../pages/contact/apiConfig";
 
+
 const Form = () => {
   const [ref, inView] = useInView({
     threshold: 0,
@@ -180,7 +181,7 @@ const Form = () => {
       <div className="col-12 formGroup">
         <input
           type="text"
-          className={`formControl ${subjectError ? "formError" : ""}`}
+          className={` formControl ${subjectError ? "formError" : ""}`}
           onFocus={() => {
             handleInputFocus(setSubjectError);
           }}

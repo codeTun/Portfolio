@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Routes, Route, useLocation, Navigate } from "react-router-dom";
+import "flowbite/dist/flowbite.css";
 
 // Components
 import Loader from "./pages/loader/loader";
