@@ -158,6 +158,7 @@ const Form = () => {
           name="name"
           placeholder={`${nameError ? "Please enter your name" : "Name"}`}
           autoComplete="name"
+          style={{ backgroundColor: "#0d1217", color: "white" }}
         />
       </div>
       <div
@@ -176,6 +177,7 @@ const Form = () => {
           name="email"
           placeholder={`${emailError ? "Please enter a valid email" : "Email"}`}
           autoComplete="email"
+          style={{ backgroundColor: "#0d1217", color: "white" }}
         />
       </div>
       <div className="col-12 formGroup">
@@ -191,6 +193,8 @@ const Form = () => {
           name="subject"
           placeholder={`${subjectError ? "Please enter a subject" : "Subject"}`}
           autoComplete="off"
+          style={{ backgroundColor: "#0d1217", color: "white" }}
+
         />
       </div>
       <div className="col-12 formGroup">
@@ -206,6 +210,7 @@ const Form = () => {
           rows="5"
           placeholder={`${messageError ? "Please enter a message" : "Message"}`}
           autoComplete="off"
+          style={{ backgroundColor: "#0d1217", color: "white" }}
         ></textarea>
       </div>
       <motion.div className="col-12 formGroup formSubmit">

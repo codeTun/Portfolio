@@ -64,11 +64,30 @@
     "image": "/projectImages/Leoni.png",
     "image2": "/projectImages/Leoni-tender-call.jpg",
     "image3": "/projectImages/team3.png",
-    "technologies": ["Angular", "NodeJs", "Bootstrap", "Springboot", "Postgres"],
-    "body": "The tendering process stands as a critical element in acquiring commercial goods and services. Traditionally managed through paper submissions or emails, this manual process suffers from inefficiencies and lacks traceability, impacting the proper selection of suppliers. The digitalization of this process emerges as a crucial innovation, offering a unified platform where businesses can publish tender calls and suppliers can apply.\n\nInitiating our final year project, we focus on developing a platform to digitalize the tendering process. Our goal is to create an integrated solution that enhances transparency, traceability, and efficiency. This platform will centralize submissions and provide analytical tools to objectively and comprehensively evaluate offers, reducing human errors and optimizing supplier selection. Thus, our project aims to contribute to a more streamlined and equitable management of tender calls, addressing contemporary needs of both businesses and suppliers.\n\nStructure of the Report:\n- Preliminary Study: Provides an overview of the project context, examines existing solutions, and details our own solution and methodology.\n- Project Initialization: Focuses on the pre-sprint phase, defining functional and non-functional requirements, discussing technological decisions, and outlining the platform architecture.\n- Project Releases: Describes specific project releases, covering specification, design, and implementation stages, along with summaries of key findings and progress at each phase.",
+    "technologies": [
+      "Angular",
+      "NodeJs",
+      "Bootstrap",
+      "Springboot",
+      "Postgres"
+    ],
+    "body": "The tendering process stands as a critical element in acquiring commercial goods and services. Traditionally managed through paper submissions or emails, this manual process suffers from inefficiencies and lacks traceability, impacting the proper selection of suppliers. The digitalization of this process emerges as an innovation, offering a unified platform where businesses can publish tender calls and suppliers can apply.\n\nInitiating our final year project, we focus on developing a platform to digitalize the tendering process. Our goal is to create an integrated solution that enhances transparency, traceability, and efficiency. This platform will centralize submissions and provide analytical tools to objectively and comprehensively evaluate offers, reducing human errors and optimizing supplier selection. Thus, our project aims to contribute to a more streamlined and equitable management of tender calls, addressing contemporary needs of both businesses and suppliers.\n\nStructure of the Report:\n- Preliminary Study: Provides an overview of the project context, examines existing solutions, and details our own solution and methodology.\n- Project Initialization: Focuses on the pre-sprint phase, defining functional and non-functional requirements, discussing technological decisions, and outlining the platform architecture.\n- Project Releases: Describes specific project releases, covering specification, design, and implementation stages, along with summaries of key findings and progress at each phase.",
     "github": "https://github.com/codeTun/",
     "deployed": "#",
     "bgcolor": "#8900EE",
     "id": "5"
+  },
+  {
+    "title": "Gaoua Gold",
+    "description": "Its company for gold mining in Burkina Faso",
+    "image": "/projectImages/gaoua-gold.png",
+    "image2": "/projectImages/gaoua-info.jpg",
+    "image3": "/projectImages/team3.png",
+    "technologies": ["Wordpress", "CMS"],
+    "body": "Gaoua Gold is a WordPress website project developed for a gold mining company in Burkina Faso. This project involved creating an online platform that enhances the company’s digital presence and streamlines their communication processes.\n\nThe primary objective was to build a user-friendly and visually appealing website that effectively showcases Gaoua Gold’s operations, services, and achievements. By leveraging WordPress, we ensured that the website is easy to manage and update, allowing the company to keep their content fresh and relevant.\n\nThe development process included the following key phases:\n- Preliminary Study: Understanding the client’s requirements, analyzing existing websites in the industry, and planning the project’s scope and objectives.\n- Design and Development: Creating wireframes and mockups, followed by the development of the website using WordPress. Special attention was given to SEO best practices and responsive design to ensure accessibility across all devices.\n- Testing and Deployment: Conducting thorough testing to identify and fix any issues, and deploying the website to a live server. Post-launch support was also provided to ensure smooth operation and address any client feedback.\n\nThis project successfully delivered a professional and functional website that supports Gaoua Gold’s business goals and enhances their online presence.",
+    "github": "https://github.com/codeTun/",
+    "deployed": "https://gaouagoldcompany.com/",
+    "bgcolor": "#FACD01",
+    "id": "6"
   }
 ]
