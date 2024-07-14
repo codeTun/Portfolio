@@ -46,7 +46,12 @@ const Footer = () => {
     <footer>
       {/* GitHub repository link */}
 
-      <a className="footer-link" href="https://github.com/codeTun/Portfolio">
+      <a
+        className="footer-link"
+        href="https://github.com/codeTun/Portfolio"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <span>
           <AiOutlineStar /> {gitHubInfo.stars} <BiGitRepoForked />
           {gitHubInfo.forks} - Give this project a star!
