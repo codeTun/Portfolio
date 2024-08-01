@@ -5,7 +5,6 @@ import validator from "email-validator";
 import Button from "./Button";
 import apiConfig from "../pages/contact/apiConfig";
 
-
 const Form = () => {
   const [ref, inView] = useInView({
     threshold: 0,
@@ -40,9 +39,6 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Log form data for debugging
-    console.log("Form Data:", formData);
 
     formData.name === "" ? setNameError(true) : setNameError(false);
     formData.email === "" || !validator.validate(formData.email)
@@ -89,8 +85,6 @@ const Form = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log("API Response:", data);
-
         setSending(false);
         setSuccess(true);
         setFailed(false);
@@ -194,7 +188,6 @@ const Form = () => {
           placeholder={`${subjectError ? "Please enter a subject" : "Subject"}`}
           autoComplete="off"
           style={{ backgroundColor: "#0d1217", color: "white" }}
-
         />
       </div>
       <div className="col-12 formGroup">
