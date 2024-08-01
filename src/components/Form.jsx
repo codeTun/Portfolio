@@ -126,7 +126,7 @@ const Form = () => {
 
   return (
     <form
-      action="https://api.web3forms.com/submit"
+      action={apiConfig.endpoint}
       method="POST"
       ref={ref}
       className="contactForm"
