@@ -125,18 +125,18 @@ const Form = () => {
   };
 
   return (
-    <form
-      action={apiConfig.endpoint}
+    <motion.form
+      action="https://api.web3forms.com/submit"
       method="POST"
       ref={ref}
-      className="contactForm"
+      className="contactForm "
       initial={{ y: "10vw", opacity: 0 }}
       animate={inView ? { y: 0, opacity: 1 } : { y: "10vw", opacity: 0 }}
       transition={{ duration: 0.4, ease: "easeInOut" }}
       onSubmit={handleSubmit}
     >
       <h4 className="contentTitle">Send a Message</h4>
-      <div
+      <motion.div
         className="col-12 col-md-6 formGroup"
         style={{ display: "inline-block" }}
       >
@@ -152,10 +152,9 @@ const Form = () => {
           name="name"
           placeholder={`${nameError ? "Please enter your name" : "Name"}`}
           autoComplete="name"
-          style={{ backgroundColor: "#0d1217", color: "white" }}
         />
-      </div>
-      <div
+      </motion.div>
+      <motion.div
         className="col-12 col-md-6 formGroup"
         style={{ display: "inline-block" }}
       >
@@ -171,13 +170,12 @@ const Form = () => {
           name="email"
           placeholder={`${emailError ? "Please enter a valid email" : "Email"}`}
           autoComplete="email"
-          style={{ backgroundColor: "#0d1217", color: "white" }}
         />
-      </div>
-      <div className="col-12 formGroup">
+      </motion.div>
+      <motion.div className="col-12 formGroup">
         <input
           type="text"
-          className={` formControl ${subjectError ? "formError" : ""}`}
+          className={`formControl ${subjectError ? "formError" : ""}`}
           onFocus={() => {
             handleInputFocus(setSubjectError);
           }}
@@ -187,10 +185,9 @@ const Form = () => {
           name="subject"
           placeholder={`${subjectError ? "Please enter a subject" : "Subject"}`}
           autoComplete="off"
-          style={{ backgroundColor: "#0d1217", color: "white" }}
         />
-      </div>
-      <div className="col-12 formGroup">
+      </motion.div>
+      <motion.div className="col-12 formGroup">
         <textarea
           className={`formControl ${messageError ? "formError" : ""}`}
           onFocus={() => {
@@ -203,9 +200,8 @@ const Form = () => {
           rows="5"
           placeholder={`${messageError ? "Please enter a message" : "Message"}`}
           autoComplete="off"
-          style={{ backgroundColor: "#0d1217", color: "white" }}
         ></textarea>
-      </div>
+      </motion.div>
       <motion.div className="col-12 formGroup formSubmit">
         <Button
           name={handleButtonText()}
@@ -219,7 +215,7 @@ const Form = () => {
           }
         />
       </motion.div>
-    </form>
+    </motion.form>
   );
 };
 

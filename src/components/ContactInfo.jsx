@@ -30,7 +30,8 @@ const ContactInfo = ({ name, email, location }) => {
     >
       <h4 className="contentTitle">Connect With Me</h4>
       <p className="infoDescription">
-        Looking to build connections and share perspectives with talented developers working to create positive change.
+        Looking to build connections and share perspectives with talented
+        developers working to create positive change.
       </p>
       <ul className="listInfo">
         {/* Display Name */}
@@ -64,7 +65,7 @@ const ContactInfo = ({ name, email, location }) => {
           <div className="personalContactInfo">
             <span className="infoIcon">
               {/* Icon for Email */}
-              <i className="icon fa-solid fa-envelope "></i>{" "}
+              <i className="icon fa-solid fa-envelope"></i>
             </span>
             <div className="mediaWrap">
               <h6 className="infoType">Email</h6>
