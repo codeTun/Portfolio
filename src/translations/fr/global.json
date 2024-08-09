@@ -1,0 +1,55 @@
+{
+    "navbar": {
+      "home": "Accueil",
+      "about": "À propos",
+      "projects": "Projets",
+      "contact": "Contact",
+      "cv": "Télécharger CV"
+    },
+    "home": {
+      "name": "Elazheri Iheb",
+      "title": "Ingénieur Logiciel"
+    },
+    "about": {
+      "welcome": "Ravi de vous rencontrer ! 👋🏻",
+      "title": "Je suis un Ingénieur Logiciel.",
+      "description1": "Aujourd'hui, je me trouve en plein dans un chapitre exaltant de mon parcours en tant que POSITION chez le titan de la technologie. Mon terrain de jeu ? L'univers captivant du",
+      "highlight1": "Développement Web",
+      "description2": "Ici, j'endosse mon",
+      "highlight2": "chapeau de résolution de problèmes",
+      "description3": "et je me plonge tête baissée dans des défis du monde réel, tout en poursuivant sans relâche un diplôme en",
+      "highlight3": "Ingénierie Logicielle",
+      "description4": "à l'ISIMM. Me voilà donc, jonglant entre des bits binaires et des énigmes de la vie réelle, tout en écrivant ma propre histoire de succès.",
+      "description5": "La vie est un kaléidoscope d'expériences, bien au-delà des limites du travail. Quand le code n'est pas mon centre d'intérêt, je conquiers le Football, les Jeux Vidéo, et nourris mon amour pour le Codage.",
+      "view portfolio": "Voir le Portfolio"
+    },
+    "projects": {
+      "header": "Voir mon travail",
+      "title": "Projets",
+      "view project": "Voir le Travail"
+    },
+    "contact": {
+      "header": "Entrer en contact",
+      "title": "Contact",
+      "description": "Envoyer un message",
+      "form": {
+        "name": "Nom",
+        "email": "Email",
+        "subject": "Sujet",
+        "message": "Message",
+        "send": "Envoyer le Message"
+      },
+      "social": {
+        "title": "Connectez-vous avec moi",
+        "description": "Cherchez à établir des connexions et à partager des perspectives avec des développeurs talentueux qui travaillent à créer un changement positif.",
+        "location": "Tunisie",
+        "email": "iheblazhary@gmail.com"
+      }
+    },
+      "footer": {
+          "title": "Donnez une étoile à ce projet !",
+          "description": "Conçu et développé par Elazheri Iheb",
+          "rights": "Tous les points de vue et le travail sont les miens"
+      }
+  }
+  

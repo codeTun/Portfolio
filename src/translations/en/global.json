@@ -1,0 +1,54 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "cv": "Download CV"
+  },
+  "home": {
+    "name": "Elazheri Iheb",
+    "title": "Software Engineer"
+  },
+  "about": {
+    "welcome": "Nice to meet you! 👋🏻",
+    "title": "I'm a Software Engineer .",
+    "description1": "Today, I find myself knee-deep in an exhilarating chapter of my journey as a POSITION at the tech titan. My playground? The captivating universe of",
+    "highlight1": "Web Development",
+    "description2": "Here, I don my",
+    "highlight2": "problem-solving",
+    "description3": "cape and dive headfirst into real-world challenges, all while relentlessly pursuing a",
+    "highlight3": "Software Engineer",
+    "description4": "degree from ISIMM. So here I am, juggling bits of binary and real-life conundrums, all while crafting my own success story.",
+    "description5": "Life is a kaleidoscope of experiences, far beyond the confines of work. When code isn't my focus, I'm conquering Football, Gaming, and fueling my love for Coding.",
+    "view portfolio": "View Portfolio"
+  },
+  "projects": {
+    "header": "View my work",
+    "title": "Projects",
+    "view project": "View Work"
+  },
+  "contact": {
+    "header": "Get in touch",
+    "title": "Contact",
+    "description": "Send a Message",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message"
+    },
+    "social": {
+      "title": "Connect With Me",
+      "description": "Looking to build connections and share perspectives with talented developers working to create positive change.",
+      "location": "Tunisia",
+      "email": "iheblazhary@gmail.com"
+    }
+  },
+    "footer": {
+        "title": "Give this project a star!",
+        "description": "Designed and built by Elazheri Iheb",
+        "rights": "All views and work are my own"
+    }
+}
