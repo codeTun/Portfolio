@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import landingImage from "../images/iheb.jpg";
 import SocialIcons from "./SocialIcons";
+import { useTranslation } from "react-i18next";
 
-const Hero = ({ name }) => {
+const Hero = () => {
   const controls = useAnimation();
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const { t } = useTranslation();
 
   useEffect(() => {
     controls.start({ scale: 1.1, opacity: 1 });
@@ -17,6 +19,8 @@ const Hero = ({ name }) => {
   const handleWindowResize = () => {
     setWindowWidth(window.innerWidth);
   };
+
+  console.log(t("welcome.title"));
 
   const styles = {
     parentContainer: {
@@ -69,7 +73,7 @@ const Hero = ({ name }) => {
             animate={controls}
             transition={{ delay: 0, duration: 0.5, type: "spring" }}
           >
-            {name}
+            {t("welcome.title")}
           </motion.h1>
           <motion.div
             className="description"
@@ -83,10 +87,7 @@ const Hero = ({ name }) => {
                 cursor: "",
               }}
               onInit={(typewriter) => {
-                typewriter
-                  .changeDelay(50)
-                  .typeString("Software Engineer")
-                  .start();
+                typewriter.changeDelay(50).typeString(t("home.title")).start();
               }}
             />
           </motion.div>
@@ -110,7 +111,6 @@ const Hero = ({ name }) => {
       >
         <SocialIcons />
       </motion.div>
-      
     </>
   );
 };

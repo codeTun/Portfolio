@@ -4,7 +4,7 @@ const DownloadResumeButton = () => {
   const resumeLink = "/elazheri_iheb_resume.pdf";
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center mr-20">
       <a href={resumeLink} download="Elazheri Iheb CV.pdf">
         <Button
           gradientDuoTone="cyanToBlue"

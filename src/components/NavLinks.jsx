@@ -5,6 +5,7 @@ import LightDarkToggle from "./LightDarkToggle";
 import openMenu from "../images/open.svg";
 import closeMenu from "../images/close.svg";
 import DownloadResumeButton from "../components/DownloadResumeButton";
+import LanguageSelectorButton from "./LanguageSelectorButton";
 
 const NavLinks = () => {
   // State to track whether the menu is open or closed
@@ -25,6 +26,8 @@ const NavLinks = () => {
       </button>
       {/* Light/Dark mode toggle */}
       <LightDarkToggle />
+      
+
       <div className="hidden md:block">
         <DownloadResumeButton />
       </div>
@@ -77,10 +80,13 @@ const NavLinks = () => {
             Contact
           </NavLink>
         </motion.div>
+
+
         <div className={`${isMenuOpen ? "block" : "hidden"} md:hidden`}>
           <DownloadResumeButton />
         </div>
       </nav>
+        
     </>
   );
 };
