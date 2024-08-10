@@ -23,7 +23,7 @@ const LanguageSelectorButton = () => {
     <div className="language-selector relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="block w-full px-3.5 py-1 mt-1 mr-1 text-base text-cyan-600 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+        className="block w-full px-3.5 py-1 mr-1 text-base text-cyan-600 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
         type="button"
       >
         <span className={`fi ${languages.find(lang => lang.code === selectedLanguage).flag} mr-2`}></span>
