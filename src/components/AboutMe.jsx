@@ -41,12 +41,12 @@ const AboutMe = ({ name }) => {
 
   return (
     <section className="about">
-      <div className="aboutContainer container">
+      <div className="aboutContainer container bg-transparent">
         <div className="row">
           <motion.div
             className="personalImage col-12 col-lg-6"
             ref={ref}
-            initial={{ x: "-10vw", opacity: 0, scale: 0.5 }}
+            initial={{ x: "-10vw", opacity: 10, scale: 0.5 }}
             animate={
               inView
                 ? { x: 0, opacity: 1, scale: 1 }
@@ -56,7 +56,11 @@ const AboutMe = ({ name }) => {
             whileHover={{ scale: 1.05 }}
           >
             {/* Display the personal image */}
-            <motion.img src={aboutMeImg} alt={t(name)} />
+            <motion.img
+              src={aboutMeImg}
+              alt="Elazheri Iheb image while coding ."
+              className="filter contrast-200"
+            />
           </motion.div>
           <div className="personalInfo col-12 col-lg-6">
             <motion.div className="contentContainer" variants={staggerVariants}>
@@ -78,7 +82,7 @@ const AboutMe = ({ name }) => {
                 {/* Paragraphs with animation */}
                 <motion.p variants={paragraphVariants}>
                   {t("about.description1")}{" "}
-                  <span style={{ color: "var(--hl-color)" }}>
+                  <span className="text-hl-color">
                     {" "}
                     {t("about.highlight1")}
                   </span>
@@ -87,12 +91,12 @@ const AboutMe = ({ name }) => {
                 <br />
                 <motion.p variants={paragraphVariants}>
                   {t("about.description2")}{" "}
-                  <span style={{ color: "var(--hl-color)" }}>
+                  <span className="text-hl-color">
                     {" "}
                     {t("about.highlight2")}
                   </span>
                   {t("about.description3")}{" "}
-                  <span style={{ color: "var(--hl-color)" }}>
+                  <span className="text-hl-color">
                     {" "}
                     {t("about.highlight3")}
                   </span>{" "}

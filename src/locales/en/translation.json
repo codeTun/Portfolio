@@ -133,13 +133,23 @@
       "email": "Email",
       "subject": "Subject",
       "message": "Message",
-      "send": "Send Message"
+      "send": "Send Message",
+      "failed": "Try again ",
+      "loading": "Please Wait...",
+      "success": "Message Sent",
+      "nameError": "Please enter your name",
+      "emailError": "Please enter your email",
+      "subjectError": "Please enter your subject",
+      "messageError": "Please enter your message"
     },
     "social": {
       "title": "Connect With Me",
       "description": "Looking to build connections and share perspectives with talented developers working to create positive change.",
+      "name": "Name",
+      "loc": "Location",
       "location": "Tunisia",
-      "email": "iheblazhary@gmail.com"
+      "email": "iheblazhary@gmail.com",
+      "mail": "Email"
     }
   },
   "footer": {

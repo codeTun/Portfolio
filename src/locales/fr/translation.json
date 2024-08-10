@@ -132,13 +132,23 @@
       "email": "Email",
       "subject": "Sujet",
       "message": "Message",
-      "send": "Envoyer le Message"
+      "send": "Envoyer le Message",
+      "failed": "Réessayez",
+      "loading": "Veuillez patienter...",
+      "success": "Message envoyé",
+      "nameError": "Veuillez entrer votre nom",
+      "emailError": "Veuillez entrer votre email",
+      "subjectError": "Veuillez entrer votre sujet",
+      "messageError": "Veuillez entrer votre message"
     },
     "social": {
       "title": "Connectez-vous avec moi",
       "description": "Cherchez à établir des connexions et à partager des perspectives avec des développeurs talentueux qui travaillent à créer un changement positif.",
+      "name": "Nom",
+      "loc": "Emplacement",
       "location": "Tunisie",
-      "email": "iheblazhary@gmail.com"
+      "email": "iheblazhary@gmail.com",
+      "mail": "Courriel"
     }
   },
   "footer": {

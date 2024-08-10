@@ -4,6 +4,7 @@ import { useState } from "react";
 import validator from "email-validator";
 import Button from "./Button";
 import apiConfig from "../pages/contact/apiConfig";
+import { useTranslation } from "react-i18next";
 
 const Form = () => {
   const [ref, inView] = useInView({
@@ -18,6 +19,7 @@ const Form = () => {
   const [emailError, setEmailError] = useState(false);
   const [subjectError, setSubjectError] = useState(false);
   const [messageError, setMessageError] = useState(false);
+  const { t } = useTranslation();
 
   const [formData, setFormData] = useState({
     name: "",
@@ -108,9 +110,9 @@ const Form = () => {
 
   const handleButtonText = () => {
     if (sending) {
-      return "Please wait...";
+      return t("contact.form.loading");
     } else if (success) {
-      return "Message Sent";
+      return t("contact.form.success");
     } else if (
       failed ||
       nameError ||
@@ -118,9 +120,9 @@ const Form = () => {
       emailError ||
       subjectError
     ) {
-      return "Try again";
+      return t("contact.form.failed");
     } else {
-      return "Send Message";
+      return  t("contact.form.send");
     }
   };
 
@@ -129,20 +131,20 @@ const Form = () => {
       action="https://api.web3forms.com/submit"
       method="POST"
       ref={ref}
-      className="contactForm "
+      className="contactForm bg-transparent "
       initial={{ y: "10vw", opacity: 0 }}
       animate={inView ? { y: 0, opacity: 1 } : { y: "10vw", opacity: 0 }}
       transition={{ duration: 0.4, ease: "easeInOut" }}
       onSubmit={handleSubmit}
     >
-      <h4 className="contentTitle">Send a Message</h4>
+      <h4 className="contentTitle">{t("contact.description")}</h4>
       <motion.div
         className="col-12 col-md-6 formGroup"
         style={{ display: "inline-block" }}
       >
         <input
           type="text"
-          className={`formControl ${nameError ? "formError" : ""}`}
+          className={`formControl bg-transparent ${nameError ? "formError" : ""}`}
           onFocus={() => {
             handleInputFocus(setNameError);
           }}
@@ -150,7 +152,9 @@ const Form = () => {
           value={formData.name}
           id="contactName"
           name="name"
-          placeholder={`${nameError ? "Please enter your name" : "Name"}`}
+          placeholder={
+            nameError ? t("contact.form.nameError") : t("contact.form.name")
+          }
           autoComplete="name"
         />
       </motion.div>
@@ -160,7 +164,7 @@ const Form = () => {
       >
         <input
           type="text"
-          className={`formControl ${emailError ? "formError" : ""}`}
+          className={`formControl bg-transparent ${emailError ? "formError" : ""}`}
           onFocus={() => {
             handleInputFocus(setEmailError);
           }}
@@ -168,14 +172,16 @@ const Form = () => {
           value={formData.email}
           id="contactEmail"
           name="email"
-          placeholder={`${emailError ? "Please enter a valid email" : "Email"}`}
+          placeholder={
+            nameError ? t("contact.form.emailError") : t("contact.form.email")
+          }
           autoComplete="email"
         />
       </motion.div>
       <motion.div className="col-12 formGroup">
         <input
           type="text"
-          className={`formControl ${subjectError ? "formError" : ""}`}
+          className={`formControl bg-transparent  ${subjectError ? "formError" : ""}`}
           onFocus={() => {
             handleInputFocus(setSubjectError);
           }}
@@ -183,7 +189,7 @@ const Form = () => {
           value={formData.subject}
           id="contactSubject"
           name="subject"
-          placeholder={`${subjectError ? "Please enter a subject" : "Subject"}`}
+          placeholder={nameError ? t("contact.form.subjectError") : t("contact.form.subject")}
           autoComplete="off"
         />
       </motion.div>
@@ -198,7 +204,7 @@ const Form = () => {
           name="message"
           id="contactMessage"
           rows="5"
-          placeholder={`${messageError ? "Please enter a message" : "Message"}`}
+          placeholder={nameError ? t("contact.form.messageError") : t("contact.form.message")}
           autoComplete="off"
         ></textarea>
       </motion.div>

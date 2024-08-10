@@ -25,7 +25,10 @@ const Portfolio = () => {
       {/* Main Portfolio Page */}
       <main className="portfolio container">
         {/* Display the page header */}
-        <PageHeader title="Projects" description="View my work" />
+        <PageHeader
+          titleKey="projects.title"
+          descriptionKey="projects.header"
+        />
 
         <div className="row">
           {/* Display the list of projects */}
