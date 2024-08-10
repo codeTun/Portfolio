@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 /**
  * Represents a page header with title and description.
@@ -8,7 +9,10 @@ import { motion } from "framer-motion";
  * @param {string} description - The description of the page.
  */
 
-const PageHeader = ({ title, description }) => (
+const PageHeader = ({ title, description }) => {
+  const { t } = useTranslation();
+  return (
+
   <>
     {/* Page description */}
     <motion.p
@@ -17,7 +21,7 @@ const PageHeader = ({ title, description }) => (
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
     >
-      {description}
+      {t("projects.header")}
     </motion.p>
     {/* Page title */}
     <motion.h3
@@ -26,9 +30,10 @@ const PageHeader = ({ title, description }) => (
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
     >
-      {title}
+      {t("projects.title")}
     </motion.h3>
   </>
-);
+  );
+};
 
 export default PageHeader;

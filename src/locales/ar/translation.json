@@ -26,8 +26,8 @@
   "projects": {
     "header": "عرض أعمالي",
     "title": "المشاريع",
-    "view project": "عرض العمل",
-    "project details": [
+    "view-project": "عرض العمل",
+    "project-details": [
       {
         "title": "برومولاب",
         "description": "رؤيتك، مسؤوليتنا",

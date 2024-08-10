@@ -26,8 +26,8 @@
   "projects": {
     "header": "Voir mon travail",
     "title": "Projets",
-    "view project": "Voir le Travail",
-    "project details": [
+    "view-project": "Voir le Travail",
+    "project-details": [
       {
         "title": "Promolab",
         "description": "Votre vision, notre responsabilité",
