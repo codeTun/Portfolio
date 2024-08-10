@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { AiOutlineStar } from "react-icons/ai";
 import { BiGitRepoForked } from "react-icons/bi";
+import { useTranslation } from "react-i18next";
+import "../i18n";
 
 /**
  * Represents the footer section of the website.
@@ -9,6 +11,7 @@ import { BiGitRepoForked } from "react-icons/bi";
  */
 
 const Footer = () => {
+  const { t } = useTranslation();
   const date = new Date();
   const currentYear = date.getFullYear();
 
@@ -45,7 +48,6 @@ const Footer = () => {
   return (
     <footer>
       {/* GitHub repository link */}
-
       <a
         className="footer-link"
         href="https://github.com/codeTun/Portfolio"
@@ -54,13 +56,12 @@ const Footer = () => {
       >
         <span>
           <AiOutlineStar /> {gitHubInfo.stars} <BiGitRepoForked />
-          {gitHubInfo.forks} - Give this project a star!
+          {gitHubInfo.forks} - {t("footer.title")}
         </span>
         <p>
-          <span>▷</span> Designed and built by Elazheri Iheb &copy;{" "}
-          {currentYear}
+          <span>▷</span> {t("footer.description")} &copy; {currentYear}
         </p>
-        <p>All views and work are my own</p>
+        <p>{t("footer.rights")}</p>
       </a>
     </footer>
   );

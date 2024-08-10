@@ -1,0 +1,160 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "cv": "Download CV"
+  },
+  "welcome": {
+    "name": "Elazheri Iheb",
+    "title": "Software Engineer"
+  },
+  "about": {
+    "welcome": "Nice to meet you 👋🏻",
+    "title": "I'm a Software Engineer",
+    "description1": "Today, I find myself knee-deep in an exhilarating chapter of my journey as a Software Engineer at the tech titan. My playground? The captivating universe of",
+    "highlight1": "Web Development",
+    "description2": "Here, I don my",
+    "highlight2": "problem-solving",
+    "description3": "cape and dive headfirst into real-world challenges, all while relentlessly pursuing a",
+    "highlight3": "Software Engineer",
+    "description4": "degree from ISIMM. So here I am, juggling bits of binary and real-life conundrums, all while crafting my own success story.",
+    "description5": "Life is a kaleidoscope of experiences, far beyond the confines of work. When code isn't my focus, I'm conquering Football, Gaming, and fueling my love for Coding.",
+    "view-portfolio": "View Portfolio"
+  },
+  "projects": {
+    "header": "View my work",
+    "title": "Projects",
+    "view-project": "View Work",
+
+    "view-code": "View Code",
+    "view-site": "View Site",
+    "go-Back": "Go Back",
+    "project-details": [
+      {
+        "title": "Promolab",
+        "description": "Your vision our responsability",
+        "image": "/projectImages/promolab.png",
+        "image2": "/projectImages/promolab-picture.webp",
+        "image3": "/projectImages/routes3.png",
+        "body": "Promolab is Tunisia's premier e-commerce platform tailored for laboratory and chemical products. We're committed to simplifying procurement for researchers, educators, and industry professionals by offering a curated catalog of high-quality supplies from trusted sources.With a focus on user experience and reliability, Promolab is revolutionizing how scientific endeavors are supported and pursued in Tunisia. Join us and streamline your laboratory procurement with Promolab.",
+        "technologies": [
+          "React Js",
+          "Next Js",
+          "React Js",
+          "Tailwind Css",
+          "Node Js"
+        ],
+        "github": "https://github.com/codeTun/Promolab",
+        "deployed": "https://promolab.vercel.app/",
+        "bgcolor": "var(--hl2-color)",
+        "id": "1"
+      },
+      {
+        "title": "E-souq",
+        "description": "ERP solution",
+        "image": "/projectImages/esouq.png",
+        "image2": "/projectImages/esouq-desc.png",
+        "image3": "/projectImages/weather3.png",
+        "technologies": ["JavaScript", "Next Js", "Tailwind Css", "Node Js"],
+        "body": "Esouq is a versatile ERP (Enterprise Resource Planning) solution designed to streamline operations and enhance efficiency for businesses of all sizes. Our integrated platform encompasses a range of essential functionalities including CRM (Customer Relationship Management), procurement, inventory management, and more.With Esouq, enterprises can seamlessly manage their entire workflow, from customer interactions to procurement processes, all within a centralized system. Our user-friendly interface and customizable features ensure a tailored experience that meets the unique needs of each organization.By leveraging Esouq's powerful tools, businesses can optimize resource allocation, improve decision-making, and drive growth. Whether it's managing sales pipelines, tracking inventory levels, or analyzing performance metrics, Esouq empowers enterprises to stay ahead in today's dynamic marketplace.Experience the next level of enterprise management with Esouq and unlock your business's full potential.",
+        "github": "https://github.com/codeTun/e-souq",
+        "deployed": "#",
+        "bgcolor": "var(--hl-color)",
+        "id": "2"
+      },
+      {
+        "title": "MEDITECH",
+        "description": "Medical Plateform",
+        "image": "/projectImages/meditechbg.jpg",
+        "image2": "/projectImages/meditech.png",
+        "image3": "/projectImages/meditech.png",
+        "technologies": ["JavaScript", "HTML", "CSS", "Django"],
+        "body": "MediTech is a cutting-edge medical platform tailored specifically for doctors, providing seamless access to patient information, treatment plans, and medical records.With MediTech, doctors can efficiently manage their patient data, streamline communication with healthcare teams, and make informed decisions with ease. Our user-friendly interface and intuitive features ensure a smooth and productive workflow, allowing doctors to focus on delivering quality care to their patients.Key features of MediTech include:Comprehensive patient management system: Easily access and update patient information, medical histories, and treatment plans.Secure communication tools: Facilitate collaboration with healthcare teams through secure messaging and file sharing.Advanced analytics: Gain insights into patient outcomes, treatment efficacy, and practice performance to optimize decision-making.Customizable workflows: Tailor the platform to suit the unique needs and preferences of individual doctors and medical practices.Built with the latest technologies and adhering to the highest standards of security and compliance, MediTech is the ultimate solution for modern medical professionals. Experience the future of medical practice management with MediTech.",
+        "github": "https://github.com/codeTun/MEDITECH",
+        "deployed": "https://mdyeates.github.io/coding-quiz/",
+        "bgcolor": "#6c4bf4",
+        "id": "3"
+      },
+      {
+        "title": "IEEE Wie",
+        "description": "For a colllege project",
+        "image": "/projectImages/Student.png",
+        "image2": "/projectImages/WIE-Logo.png",
+        "image3": "/projectImages/team3.png",
+        "technologies": ["HTML", "SCSS", "JavaScript"],
+        "body": "IEEE WIE: Empowering Primary Students and Teachers for SuccessIEEE WIE isn't just a platform—it's a transformative tool for primary education, designed to empower both students and teachers with innovative resources and collaborative tools.For Teachers:With IEEE WIE, educators gain access to a comprehensive suite of classroom management tools, enabling seamless lesson planning, assignment tracking, and student assessment. Our platform facilitates secure communication between teachers, students, and parents, fostering collaboration and engagement in the learning process.For Students:IEEE WIE offers primary students an interactive learning experience like no other. Through our platform, students can explore dynamic educational resources, participate in engaging activities, and receive personalized feedback to support their academic growth. With IEEE WIE, learning becomes an exciting journey of discovery and achievement.Key Features of IEEE WIE:Comprehensive Classroom Management: Organize lessons, track assignments, and monitor student progress with ease.Secure Communication Channels: Foster collaboration and communication between teachers, students, and parents in a safe and secure environment.Interactive Learning Resources: Engage students with interactive lessons, educational games, and multimedia content tailored to their interests and learning styles.Personalized Learning Pathways: Adapt instruction to meet the individual needs and abilities of each student, providing targeted support and enrichment opportunities.",
+        "github": "https://github.com/codeTun/IEEE",
+        "deployed": "https://mdyeates.github.io/coding-quiz/",
+        "bgcolor": "#f85781",
+        "id": "4"
+      },
+      {
+        "title": "Leoni OTMS",
+        "description": "Its a tender call plateform for private sector , this is my final year project in the university ISIMM",
+        "image": "/projectImages/Leoni.png",
+        "image2": "/projectImages/Leoni-tender-call.jpg",
+        "image3": "/projectImages/team3.png",
+        "technologies": [
+          "Angular",
+          "NodeJs",
+          "Bootstrap",
+          "Springboot",
+          "Postgres"
+        ],
+        "body": "The tendering process stands as a critical element in acquiring commercial goods and services. Traditionally managed through paper submissions or emails, this manual process suffers from inefficiencies and lacks traceability, impacting the proper selection of suppliers. The digitalization of this process emerges as an innovation, offering a unified platform where businesses can publish tender calls and suppliers can apply.\n\nInitiating our final year project, we focus on developing a platform to digitalize the tendering process. Our goal is to create an integrated solution that enhances transparency, traceability, and efficiency. This platform will centralize submissions and provide analytical tools to objectively and comprehensively evaluate offers, reducing human errors and optimizing supplier selection. Thus, our project aims to contribute to a more streamlined and equitable management of tender calls, addressing contemporary needs of both businesses and suppliers.\n\nStructure of the Report:\n- Preliminary Study: Provides an overview of the project context, examines existing solutions, and details our own solution and methodology.\n- Project Initialization: Focuses on the pre-sprint phase, defining functional and non-functional requirements, discussing technological decisions, and outlining the platform architecture.\n- Project Releases: Describes specific project releases, covering specification, design, and implementation stages, along with summaries of key findings and progress at each phase.",
+        "github": "https://github.com/codeTun/",
+        "deployed": "#",
+        "bgcolor": "#8900EE",
+        "id": "5"
+      },
+      {
+        "title": "Gaoua Gold",
+        "description": "Its company for gold mining in Burkina Faso",
+        "image": "/projectImages/gaoua-gold.png",
+        "image2": "/projectImages/gaoua-info.jpg",
+        "image3": "/projectImages/team3.png",
+        "technologies": ["Wordpress", "CMS"],
+        "body": "Gaoua Gold is a WordPress website project developed for a gold mining company in Burkina Faso. This project involved creating an online platform that enhances the company’s digital presence and streamlines their communication processes.\n\nThe primary objective was to build a user-friendly and visually appealing website that effectively showcases Gaoua Gold’s operations, services, and achievements. By leveraging WordPress, we ensured that the website is easy to manage and update, allowing the company to keep their content fresh and relevant.\n\nThe development process included the following key phases:\n- Preliminary Study: Understanding the client’s requirements, analyzing existing websites in the industry, and planning the project’s scope and objectives.\n- Design and Development: Creating wireframes and mockups, followed by the development of the website using WordPress. Special attention was given to SEO best practices and responsive design to ensure accessibility across all devices.\n- Testing and Deployment: Conducting thorough testing to identify and fix any issues, and deploying the website to a live server. Post-launch support was also provided to ensure smooth operation and address any client feedback.\n\nThis project successfully delivered a professional and functional website that supports Gaoua Gold’s business goals and enhances their online presence.",
+        "github": "https://github.com/codeTun/",
+        "deployed": "https://gaouagoldcompany.com/",
+        "bgcolor": "#FACD01",
+        "id": "6"
+      }
+    ]
+  },
+  "contact": {
+    "header": "Get in touch",
+    "title": "Contact",
+    "description": "Send a Message",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "failed": "Try again ",
+      "loading": "Please Wait...",
+      "success": "Message Sent",
+      "nameError": "Please enter your name",
+      "emailError": "Please enter your email",
+      "subjectError": "Please enter your subject",
+      "messageError": "Please enter your message"
+    },
+    "social": {
+      "title": "Connect With Me",
+      "description": "Looking to build connections and share perspectives with talented developers working to create positive change.",
+      "name": "Name",
+      "loc": "Location",
+      "location": "Tunisia",
+      "email": "iheblazhary@gmail.com",
+      "mail": "Email"
+    }
+  },
+  "footer": {
+    "title": "Give this project a star!",
+    "description": "Designed and built by Elazheri Iheb",
+    "rights": "All views and work are my own"
+  }
+}

@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { NavLink } from "react-router-dom";
 import Button from "./Button";
 import aboutMeImg from "../images/aboutme.jpg";
+import { useTranslation } from "react-i18next";
 
 /**
  * Represents the About Me section.
@@ -19,6 +20,7 @@ const AboutMe = ({ name }) => {
     threshold: 0.4,
     triggerOnce: true,
   });
+  const { t } = useTranslation();
 
   // Variants for staggered animations
   const staggerVariants = {
@@ -39,25 +41,36 @@ const AboutMe = ({ name }) => {
 
   return (
     <section className="about">
-      <div className="aboutContainer container">
+      <div className="aboutContainer container bg-transparent">
         <div className="row">
           <motion.div
             className="personalImage col-12 col-lg-6"
             ref={ref}
-            initial={{ x: "-10vw", opacity: 0, scale: 0.5 }}
-            animate={inView ? { x: 0, opacity: 1, scale: 1 } : { x: "-10vw", opacity: 0, scale: 0.5 }}
+            initial={{ x: "-10vw", opacity: 10, scale: 0.5 }}
+            animate={
+              inView
+                ? { x: 0, opacity: 1, scale: 1 }
+                : { x: "-10vw", opacity: 0, scale: 0.5 }
+            }
             transition={{ duration: 0.4, ease: "easeInOut" }}
             whileHover={{ scale: 1.05 }}
-            
           >
             {/* Display the personal image */}
-            <motion.img src={aboutMeImg} alt={name} />
+            <motion.img
+              src={aboutMeImg}
+              alt="Elazheri Iheb image while coding ."
+              className="filter contrast-200"
+            />
           </motion.div>
           <div className="personalInfo col-12 col-lg-6">
             <motion.div className="contentContainer" variants={staggerVariants}>
               {/* Display greeting and job title with animation */}
-              <motion.h4 variants={paragraphVariants}>Nice to meet you! 👋🏻</motion.h4>
-              <motion.h5 variants={paragraphVariants}>I'm a Software Engineer .</motion.h5>
+              <motion.h4 variants={paragraphVariants}>
+                {t("about.welcome")}
+              </motion.h4>
+              <motion.h5 variants={paragraphVariants}>
+                {t("about.title")}
+              </motion.h5>
 
               {/* Display content description with animation */}
               <motion.div
@@ -68,27 +81,36 @@ const AboutMe = ({ name }) => {
               >
                 {/* Paragraphs with animation */}
                 <motion.p variants={paragraphVariants}>
-                  Today, I find myself knee-deep in an exhilarating chapter of my journey as a POSITION at the tech
-                  titan. My playground? The captivating
-                  universe of <span style={{ color: "var(--hl-color)" }}> Web developement</span>.
+                  {t("about.description1")}{" "}
+                  <span className="text-hl-color">
+                    {" "}
+                    {t("about.highlight1")}
+                  </span>
+                  .
                 </motion.p>
                 <br />
                 <motion.p variants={paragraphVariants}>
-                  Here, I don my <span style={{ color: "var(--hl-color)" }}> problem-solving </span>
-                  cape and dive headfirst into real-world challenges, all while relentlessly pursuing a{" "}
-                  <span style={{ color: "var(--hl-color)" }}> Software Engineer</span> degree from ISIMM. So here I
-                  am, juggling bits of binary and real-life conundrums, all while crafting my own success story.
+                  {t("about.description2")}{" "}
+                  <span className="text-hl-color">
+                    {" "}
+                    {t("about.highlight2")}
+                  </span>
+                  {t("about.description3")}{" "}
+                  <span className="text-hl-color">
+                    {" "}
+                    {t("about.highlight3")}
+                  </span>{" "}
+                  {t("about.description4")}
                 </motion.p>
                 <br />
                 <motion.p variants={paragraphVariants}>
-                  Life is a kaleidoscope of experiences, far beyond the confines of work. When code isn't my focus, I'm
-                  conquering Football, Gaming, and fueling my love for Coding.
+                  {t("about.description5")}
                 </motion.p>
               </motion.div>
 
               {/* Button to view the portfolio */}
               <NavLink to="/portfolio">
-                <Button name="View Portfolio" />
+                <Button name={t("about.view-portfolio")} />
               </NavLink>
             </motion.div>
           </div>

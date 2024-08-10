@@ -1,5 +1,6 @@
 import ProjectCard from "./ProjectCard";
-import projects from "../_data/projects.json";
+import { useTranslation } from "react-i18next";
+import "../i18n"; // Ensure i18n is initialized
 
 /**
  * Represents a list of project cards.
@@ -10,9 +11,18 @@ import projects from "../_data/projects.json";
  * @component
  */
 
-const ProjectList = () =>
-  projects.map((project) => (
-    <ProjectCard key={project.id} title={project.title} image={project.image} color={project.bgcolor} />
+const ProjectList = () => {
+  const { t } = useTranslation();
+  const projectDetails = t("projects.project-details", { returnObjects: true });
+
+  return projectDetails.map((project, index) => (
+    <ProjectCard
+      key={index}
+      title={project.title}
+      image={project.image}
+      color={project.bgcolor}
+    />
   ));
+};
 
 export default ProjectList;

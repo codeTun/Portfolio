@@ -5,8 +5,8 @@ import PageHeader from "../../../components/PageHeader";
 import PageNotFound from "../../404/PageNotFound";
 import Button from "../../../components/Button";
 import Image from "../../../components/Image";
-import projects from "../../../_data/projects.json";
 import Footer from "../../../components/Footer";
+import { useTranslation } from "react-i18next";
 
 /**
  * Represents the ProjectDetails page component.
@@ -18,6 +18,7 @@ import Footer from "../../../components/Footer";
 const ProjectDetails = () => {
   // Get the current location using React Router's useLocation hook
   const location = useLocation();
+  const { t } = useTranslation();
 
   // Scroll to the top of the page when the location changes
   useEffect(() => {
@@ -27,7 +28,8 @@ const ProjectDetails = () => {
   // Get the project title from the route parameters
   const { projectTitle } = useParams();
 
-  // Find the project in the data using the title
+  // Find the project in the translations using the title
+  const projects = t("projects.project-details", { returnObjects: true });
   const project = projects.find(
     (project) => project.title.toLowerCase() === projectTitle
   );
@@ -98,13 +100,16 @@ const ProjectDetails = () => {
                 }}
               >
                 <a href={project.github} target="blank">
-                  <Button name="View Code" />
+                  <Button name={t("projects.view-code")} />
                 </a>
                 <a href={project.deployed} target="blank">
-                  <Button name="View Site" />
+                  <Button name={t("projects.view-site")} />
                 </a>
                 <Link to="/portfolio">
-                  <Button name="Go Back" color="var(--hl2-color)" />
+                  <Button
+                    name={t("projects.go-back")}
+                    color="var(--hl2-color)"
+                  />
                 </Link>
               </motion.div>
             </div>

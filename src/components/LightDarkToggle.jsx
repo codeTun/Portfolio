@@ -62,7 +62,7 @@ const LightDarkToggle = () => {
 
   return (
     <button
-      className="toggleMode"
+      className="toggleMode mt-0"
       onClick={toggleMode}
       style={{
         position: "absolute",

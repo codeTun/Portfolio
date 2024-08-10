@@ -13,35 +13,17 @@ import "flowbite/dist/flowbite.css";
 import App from "./App";
 
 import { BrowserRouter } from "react-router-dom";
-import i18next from "i18next";
-import global_en from "./locales/en/global.json";
-import global_fr from "./locales/fr/global.json";
-import global_ar from "./locales/ar/global.json";
-
-i18next.init({
-  interpolate: { escapeValue: false },
-  lng: "en",
-  resources: {
-    en: {
-      global: global_en,
-    },
-    fr: {
-      global: global_fr,
-    },
-    ar: {
-      global: global_ar,
-    },
-  },
-});
+import { I18nextProvider } from "react-i18next";
+import i18n from "./i18n"; // Import the i18n configuration
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <i18nextProvider i18n={i18next}>
-      <BrowserRouter>
+    <BrowserRouter>
+      <I18nextProvider i18n={i18n}>
         <App />
         <Analytics />
-      </BrowserRouter>
-    </i18nextProvider>
+      </I18nextProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );

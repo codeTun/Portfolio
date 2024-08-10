@@ -1,18 +1,26 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import landingImage from "../images/iheb.jpg";
 import SocialIcons from "./SocialIcons";
+import { useTranslation } from "react-i18next";
 
-const Hero = ({ name }) => {
+const Hero = () => {
   const controls = useAnimation();
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const { t, i18n } = useTranslation();
+  const [typewriterKey, setTypewriterKey] = useState(Date.now()); // Key to force re-render
 
   useEffect(() => {
     controls.start({ scale: 1.1, opacity: 1 });
     window.addEventListener("resize", handleWindowResize);
     return () => window.removeEventListener("resize", handleWindowResize);
   }, [controls]);
+
+  useEffect(() => {
+    // Update key to force Typewriter to re-render when language changes
+    setTypewriterKey(Date.now());
+  }, [i18n.language]);
 
   const handleWindowResize = () => {
     setWindowWidth(window.innerWidth);
@@ -29,7 +37,7 @@ const Hero = ({ name }) => {
       position: windowWidth > 768 ? "absolute" : "relative",
       margin: "0",
       opacity: "0.2",
-      width: windowWidth <= 768 ? "100%" : "30%", // Adjust the width based on the window width
+      width: windowWidth <= 768 ? "100%" : "30%",
       height: "auto",
       borderRadius: "50%",
       objectFit: "cover",
@@ -48,13 +56,13 @@ const Hero = ({ name }) => {
       color: "var(--text-color)",
       textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
       padding: "18px",
-      fontSize: windowWidth <= 768 ? "1.5em" : "1.5em", // Adjust the text size based on the window width
+      fontSize: windowWidth <= 768 ? "1.5em" : "1.5em",
     },
     name: {
       color: "var(--hl-color)",
       fontWeight: "700",
       paddingBottom: "10px",
-      fontSize: windowWidth <= 768 ? "1.8em" : "2.5em", // Adjust the text size based on the window width
+      fontSize: windowWidth <= 768 ? "1.8em" : "2.5em",
     },
   };
 
@@ -69,7 +77,7 @@ const Hero = ({ name }) => {
             animate={controls}
             transition={{ delay: 0, duration: 0.5, type: "spring" }}
           >
-            {name}
+            {t("welcome.name")}
           </motion.h1>
           <motion.div
             className="description"
@@ -78,14 +86,11 @@ const Hero = ({ name }) => {
             transition={{ duration: 0.4, type: "spring" }}
           >
             <Typewriter
-              className="description"
-              options={{
-                cursor: "",
-              }}
+              key={typewriterKey} // Key to force re-render
               onInit={(typewriter) => {
                 typewriter
                   .changeDelay(50)
-                  .typeString("Software Engineer")
+                  .typeString(t("welcome.title"))
                   .start();
               }}
             />
@@ -110,7 +115,6 @@ const Hero = ({ name }) => {
       >
         <SocialIcons />
       </motion.div>
-      
     </>
   );
 };

@@ -1,5 +1,6 @@
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 /**
  * Represents the contact information section.
@@ -17,6 +18,7 @@ const ContactInfo = ({ name, email, location }) => {
     threshold: 0,
     triggerOnce: true,
   });
+  const { t } = useTranslation();
 
   return (
     <motion.div
@@ -28,11 +30,8 @@ const ContactInfo = ({ name, email, location }) => {
       animate={inView ? { y: 0, opacity: 1 } : { y: "10vw", opacity: 0 }}
       transition={{ duration: 0.4, ease: "easeInOut" }}
     >
-      <h4 className="contentTitle">Connect With Me</h4>
-      <p className="infoDescription">
-        Looking to build connections and share perspectives with talented
-        developers working to create positive change.
-      </p>
+      <h4 className="contentTitle">{t("contact.social.title")}</h4>
+      <p className="infoDescription">{t("contact.social.description")}</p>
       <ul className="listInfo">
         {/* Display Name */}
         <li>
@@ -42,8 +41,8 @@ const ContactInfo = ({ name, email, location }) => {
               <i className="icon fa-solid fa-user"></i>{" "}
             </span>
             <div className="mediaWrap">
-              <h6 className="infoType">Name</h6>
-              <span className="infoValue">{name}</span>
+              <h6 className="infoType">{t("contact.social.name")}</h6>
+              <span className="infoValue">{t("welcome.name")}</span>
             </div>
           </div>
         </li>
@@ -55,8 +54,8 @@ const ContactInfo = ({ name, email, location }) => {
               <i className="icon fa-solid fa-location-pin "></i>{" "}
             </span>
             <div className="mediaWrap">
-              <h6 className="infoType">Location</h6>
-              <span className="infoValue">{location}</span>
+              <h6 className="infoType">{t("contact.social.loc")}</h6>
+              <span className="infoValue">{t("contact.social.location")}</span>
             </div>
           </div>
         </li>
@@ -68,7 +67,7 @@ const ContactInfo = ({ name, email, location }) => {
               <i className="icon fa-solid fa-envelope"></i>
             </span>
             <div className="mediaWrap">
-              <h6 className="infoType">Email</h6>
+              <h6 className="infoType">{t("contact.social.mail")}</h6>
               {/* Link to email */}
               <span className="infoValue">
                 <a href={`mailto:${email}`}>{email}</a>

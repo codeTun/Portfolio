@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 import { FiArrowUpRight } from "react-icons/fi";
 import Image from "./Image";
-
+import { useTranslation } from "react-i18next";
 /**
  * Represents a project card component.
  *
@@ -19,6 +19,7 @@ const ProjectCard = ({ title, image, color, id }) => {
     threshold: 0.5,
     triggerOnce: true,
   });
+  const { t } = useTranslation();
 
   const variants = {
     hidden: { y: "10vw", opacity: 0 },
@@ -47,7 +48,7 @@ const ProjectCard = ({ title, image, color, id }) => {
           <div className="textWrap col-6 d-flex flex-column justify-content-center align-items-center m-5">
             <h3 className="projectTitle">{title}</h3>
             <span className="viewWork">
-              View Work <FiArrowUpRight />
+              {t("projects.view-project")} <FiArrowUpRight />
             </span>
           </div>
           <div className="imageContainer col-6 d-flex align-items-center justify-content-center">
