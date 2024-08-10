@@ -11,8 +11,8 @@
     "title": "Ingénieur Logiciel"
   },
   "about": {
-    "welcome": "Ravi de vous rencontrer ! 👋🏻",
-    "title": "Je suis un Ingénieur Logiciel.",
+    "welcome": "Ravi de vous rencontrer  👋🏻",
+    "title": "Je suis un Ingénieur Logiciel",
     "description1": "Aujourd'hui, je me trouve en plein dans un chapitre exaltant de mon parcours en tant que POSITION chez le titan de la technologie. Mon terrain de jeu ? L'univers captivant du",
     "highlight1": "Développement Web",
     "description2": "Ici, j'endosse mon",
@@ -21,7 +21,7 @@
     "highlight3": "Ingénierie Logicielle",
     "description4": "à l'ISIMM. Me voilà donc, jonglant entre des bits binaires et des énigmes de la vie réelle, tout en écrivant ma propre histoire de succès.",
     "description5": "La vie est un kaléidoscope d'expériences, bien au-delà des limites du travail. Quand le code n'est pas mon centre d'intérêt, je conquiers le Football, les Jeux Vidéo, et nourris mon amour pour le Codage.",
-    "view portfolio": "Voir le Portfolio"
+    "view-portfolio": "Voir le Portfolio"
   },
   "projects": {
     "header": "Voir mon travail",
