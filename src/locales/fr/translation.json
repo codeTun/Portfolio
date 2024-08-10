@@ -27,36 +27,99 @@
     "header": "Voir mon travail",
     "title": "Projets",
     "view-project": "Voir le Travail",
+    "view-code": "Voir le code",
+    "view-site": "Voir le site",
+    "go-back": "Retourner",
     "project-details": [
       {
         "title": "Promolab",
         "description": "Votre vision, notre responsabilité",
-        "body": "Promolab est la principale plateforme de commerce électronique en Tunisie, spécialisée dans les produits de laboratoire et chimiques. Nous nous engageons à simplifier les achats pour les chercheurs, les éducateurs et les professionnels de l'industrie en offrant un catalogue sélectionné de fournitures de haute qualité provenant de sources fiables. Avec un accent sur l'expérience utilisateur et la fiabilité, Promolab révolutionne la manière dont les efforts scientifiques sont soutenus et poursuivis en Tunisie. Rejoignez-nous et simplifiez vos achats de laboratoire avec Promolab."
+        "body": "Promolab est la principale plateforme de commerce électronique en Tunisie, spécialisée dans les produits de laboratoire et chimiques. Nous nous engageons à simplifier les achats pour les chercheurs, les éducateurs et les professionnels de l'industrie en offrant un catalogue sélectionné de fournitures de haute qualité provenant de sources fiables. Avec un accent sur l'expérience utilisateur et la fiabilité, Promolab révolutionne la manière dont les efforts scientifiques sont soutenus et poursuivis en Tunisie. Rejoignez-nous et simplifiez vos achats de laboratoire avec Promolab.",
+        "image": "/projectImages/promolab.png",
+        "image2": "/projectImages/promolab-picture.webp",
+        "image3": "/projectImages/routes3.png",
+        "technologies": [
+          "React Js",
+          "Next Js",
+          "React Js",
+          "Tailwind Css",
+          "Node Js"
+        ],
+        "github": "https://github.com/codeTun/Promolab",
+        "deployed": "https://promolab.vercel.app/",
+        "bgcolor": "var(--hl2-color)",
+        "id": "1"
       },
       {
         "title": "E-souq",
         "description": "Solution ERP",
-        "body": "Esouq est une solution ERP (Enterprise Resource Planning) polyvalente conçue pour rationaliser les opérations et améliorer l'efficacité des entreprises de toutes tailles. Notre plateforme intégrée comprend une gamme de fonctionnalités essentielles, notamment la gestion de la relation client (CRM), les achats, la gestion des stocks et bien plus encore. Avec Esouq, les entreprises peuvent gérer de manière transparente l'ensemble de leur flux de travail, des interactions avec les clients aux processus d'approvisionnement, le tout au sein d'un système centralisé. Notre interface conviviale et nos fonctionnalités personnalisables garantissent une expérience adaptée aux besoins uniques de chaque organisation. En exploitant les outils puissants d'Esouq, les entreprises peuvent optimiser l'allocation des ressources, améliorer la prise de décision et stimuler la croissance. Qu'il s'agisse de gérer des pipelines de vente, de suivre les niveaux de stocks ou d'analyser les performances, Esouq permet aux entreprises de rester en avance sur un marché dynamique. Découvrez le prochain niveau de gestion d'entreprise avec Esouq et libérez tout le potentiel de votre entreprise."
+        "body": "Esouq est une solution ERP (Enterprise Resource Planning) polyvalente conçue pour rationaliser les opérations et améliorer l'efficacité des entreprises de toutes tailles. Notre plateforme intégrée comprend une gamme de fonctionnalités essentielles, notamment la gestion de la relation client (CRM), les achats, la gestion des stocks et bien plus encore. Avec Esouq, les entreprises peuvent gérer de manière transparente l'ensemble de leur flux de travail, des interactions avec les clients aux processus d'approvisionnement, le tout au sein d'un système centralisé. Notre interface conviviale et nos fonctionnalités personnalisables garantissent une expérience adaptée aux besoins uniques de chaque organisation. En exploitant les outils puissants d'Esouq, les entreprises peuvent optimiser l'allocation des ressources, améliorer la prise de décision et stimuler la croissance. Qu'il s'agisse de gérer des pipelines de vente, de suivre les niveaux de stocks ou d'analyser les performances, Esouq permet aux entreprises de rester en avance sur un marché dynamique. Découvrez le prochain niveau de gestion d'entreprise avec Esouq et libérez tout le potentiel de votre entreprise.",
+        "image": "/projectImages/esouq.png",
+        "image2": "/projectImages/esouq-desc.png",
+        "image3": "/projectImages/weather3.png",
+        "technologies": ["JavaScript", "Next Js", "Tailwind Css", "Node Js"],
+        "github": "https://github.com/codeTun/e-souq",
+        "deployed": "#",
+        "bgcolor": "var(--hl-color)",
+        "id": "2"
       },
       {
         "title": "MEDITECH",
         "description": "Plateforme médicale",
-        "body": "MediTech est une plateforme médicale de pointe spécialement conçue pour les médecins, offrant un accès fluide aux informations sur les patients, aux plans de traitement et aux dossiers médicaux. Avec MediTech, les médecins peuvent gérer efficacement les données de leurs patients, rationaliser la communication avec les équipes de soins de santé et prendre des décisions éclairées en toute simplicité. Notre interface conviviale et nos fonctionnalités intuitives assurent un flux de travail fluide et productif, permettant aux médecins de se concentrer sur la prestation de soins de qualité à leurs patients. Les principales fonctionnalités de MediTech incluent : Système complet de gestion des patients : Accédez facilement aux informations des patients, mettez à jour les antécédents médicaux et les plans de traitement. Outils de communication sécurisés : Facilitez la collaboration avec les équipes de soins de santé grâce à une messagerie sécurisée et au partage de fichiers. Analyses avancées : Obtenez des informations sur les résultats des patients, l'efficacité des traitements et les performances des pratiques pour optimiser la prise de décision. Flux de travail personnalisables : Adaptez la plateforme pour répondre aux besoins et aux préférences uniques des médecins et des pratiques médicales. Construit avec les technologies les plus récentes et respectant les normes les plus élevées de sécurité et de conformité, MediTech est la solution ultime pour les professionnels médicaux modernes. Découvrez l'avenir de la gestion des pratiques médicales avec MediTech."
+        "body": "MediTech est une plateforme médicale de pointe spécialement conçue pour les médecins, offrant un accès fluide aux informations sur les patients, aux plans de traitement et aux dossiers médicaux. Avec MediTech, les médecins peuvent gérer efficacement les données de leurs patients, rationaliser la communication avec les équipes de soins de santé et prendre des décisions éclairées en toute simplicité. Notre interface conviviale et nos fonctionnalités intuitives assurent un flux de travail fluide et productif, permettant aux médecins de se concentrer sur la prestation de soins de qualité à leurs patients. Les principales fonctionnalités de MediTech incluent : Système complet de gestion des patients : Accédez facilement aux informations des patients, mettez à jour les antécédents médicaux et les plans de traitement. Outils de communication sécurisés : Facilitez la collaboration avec les équipes de soins de santé grâce à une messagerie sécurisée et au partage de fichiers. Analyses avancées : Obtenez des informations sur les résultats des patients, l'efficacité des traitements et les performances des pratiques pour optimiser la prise de décision. Flux de travail personnalisables : Adaptez la plateforme pour répondre aux besoins et aux préférences uniques des médecins et des pratiques médicales. Construit avec les technologies les plus récentes et respectant les normes les plus élevées de sécurité et de conformité, MediTech est la solution ultime pour les professionnels médicaux modernes. Découvrez l'avenir de la gestion des pratiques médicales avec MediTech.",
+        "image": "/projectImages/meditechbg.jpg",
+        "image2": "/projectImages/meditech.png",
+        "image3": "/projectImages/meditech.png",
+        "technologies": ["JavaScript", "HTML", "CSS", "Django"],
+        "github": "https://github.com/codeTun/MEDITECH",
+        "deployed": "https://mdyeates.github.io/coding-quiz/",
+        "bgcolor": "#6c4bf4",
+        "id": "3"
       },
       {
         "title": "IEEE Wie",
         "description": "Pour un projet de collège",
-        "body": "IEEE WIE : Autonomisation des élèves et des enseignants du primaire pour le succès. IEEE WIE n'est pas seulement une plateforme, c'est un outil de transformation pour l'éducation primaire, conçu pour autonomiser les élèves et les enseignants grâce à des ressources innovantes et des outils de collaboration. Pour les enseignants : Avec IEEE WIE, les éducateurs ont accès à une suite complète d'outils de gestion de classe, permettant une planification de cours fluide, un suivi des devoirs et une évaluation des élèves. Notre plateforme facilite une communication sécurisée entre les enseignants, les élèves et les parents, favorisant la collaboration et l'engagement dans le processus d'apprentissage. Pour les élèves : IEEE WIE offre aux élèves du primaire une expérience d'apprentissage interactive inédite. Grâce à notre plateforme, les élèves peuvent explorer des ressources éducatives dynamiques, participer à des activités engageantes et recevoir des retours personnalisés pour soutenir leur croissance académique. Avec IEEE WIE, l'apprentissage devient un voyage passionnant de découverte et de réussite. Les principales caractéristiques d'IEEE WIE incluent : Gestion complète de la classe : Organisez les leçons, suivez les devoirs et surveillez les progrès des élèves avec facilité. Canaux de communication sécurisés : Favorisez la collaboration et la communication entre les enseignants, les élèves et les parents dans un environnement sûr et sécurisé. Ressources d'apprentissage interactives : Engagez les élèves avec des leçons interactives, des jeux éducatifs et des contenus multimédias adaptés à leurs intérêts et styles d'apprentissage. Parcours d'apprentissage personnalisés : Adaptez l'instruction pour répondre aux besoins et capacités individuels de chaque élève, en offrant un soutien ciblé et des opportunités d'enrichissement."
+        "body": "IEEE WIE : Autonomisation des élèves et des enseignants du primaire pour le succès. IEEE WIE n'est pas seulement une plateforme, c'est un outil de transformation pour l'éducation primaire, conçu pour autonomiser les élèves et les enseignants grâce à des ressources innovantes et des outils de collaboration. Pour les enseignants : Avec IEEE WIE, les éducateurs ont accès à une suite complète d'outils de gestion de classe, permettant une planification de cours fluide, un suivi des devoirs et une évaluation des élèves. Notre plateforme facilite une communication sécurisée entre les enseignants, les élèves et les parents, favorisant la collaboration et l'engagement dans le processus d'apprentissage. Pour les élèves : IEEE WIE offre aux élèves du primaire une expérience d'apprentissage interactive inédite. Grâce à notre plateforme, les élèves peuvent explorer des ressources éducatives dynamiques, participer à des activités engageantes et recevoir des retours personnalisés pour soutenir leur croissance académique. Avec IEEE WIE, l'apprentissage devient un voyage passionnant de découverte et de réussite. Les principales caractéristiques d'IEEE WIE incluent : Gestion complète de la classe : Organisez les leçons, suivez les devoirs et surveillez les progrès des élèves avec facilité. Canaux de communication sécurisés : Favorisez la collaboration et la communication entre les enseignants, les élèves et les parents dans un environnement sûr et sécurisé. Ressources d'apprentissage interactives : Engagez les élèves avec des leçons interactives, des jeux éducatifs et des contenus multimédias adaptés à leurs intérêts et styles d'apprentissage. Parcours d'apprentissage personnalisés : Adaptez l'instruction pour répondre aux besoins et capacités individuels de chaque élève, en offrant un soutien ciblé et des opportunités d'enrichissement.",
+        "image": "/projectImages/Student.png",
+        "image2": "/projectImages/WIE-Logo.png",
+        "image3": "/projectImages/team3.png",
+        "technologies": ["HTML", "SCSS", "JavaScript"],
+        "github": "https://github.com/codeTun/IEEE",
+        "deployed": "https://mdyeates.github.io/coding-quiz/",
+        "bgcolor": "#f85781",
+        "id": "4"
       },
       {
         "title": "Leoni OTMS",
         "description": "C'est une plateforme d'appel d'offres pour le secteur privé, c'est mon projet de fin d'études à l'université ISIMM",
-        "body": "Le processus d'appel d'offres constitue un élément essentiel dans l'acquisition de biens et de services commerciaux. Traditionnellement géré par des soumissions papier ou des e-mails, ce processus manuel souffre d'inefficacités et manque de traçabilité, impactant la sélection appropriée des fournisseurs. La digitalisation de ce processus émerge comme une innovation, offrant une plateforme unifiée où les entreprises peuvent publier des appels d'offres et les fournisseurs peuvent postuler. En initiant notre projet de fin d'études, nous nous concentrons sur le développement d'une plateforme pour digitaliser le processus d'appel d'offres. Notre objectif est de créer une solution intégrée qui améliore la transparence, la traçabilité et l'efficacité. Cette plateforme centralisera les soumissions et fournira des outils analytiques pour évaluer objectivement et de manière complète les offres, réduisant les erreurs humaines et optimisant la sélection des fournisseurs. Ainsi, notre projet vise à contribuer à une gestion plus rationalisée et équitable des appels d'offres, répondant aux besoins contemporains des entreprises et des fournisseurs. Structure du rapport : Étude préliminaire : Fournit un aperçu du contexte du projet, examine les solutions existantes et détaille notre propre solution et méthodologie. Initialisation du projet : Se concentre sur la phase pré-sprint, définissant les exigences fonctionnelles et non fonctionnelles, discutant des décisions technologiques et décrivant l'architecture de la plateforme. Réleases du projet : Décrit les réleases spécifiques du projet, couvrant les étapes de spécification, de conception et d'implémentation, ainsi que des résumés des principales conclusions et progrès à chaque phase."
+        "body": "Le processus d'appel d'offres constitue un élément essentiel dans l'acquisition de biens et de services commerciaux. Traditionnellement géré par des soumissions papier ou des e-mails, ce processus manuel souffre d'inefficacités et manque de traçabilité, impactant la sélection appropriée des fournisseurs. La digitalisation de ce processus émerge comme une innovation, offrant une plateforme unifiée où les entreprises peuvent publier des appels d'offres et les fournisseurs peuvent postuler. En initiant notre projet de fin d'études, nous nous concentrons sur le développement d'une plateforme pour digitaliser le processus d'appel d'offres. Notre objectif est de créer une solution intégrée qui améliore la transparence, la traçabilité et l'efficacité. Cette plateforme centralisera les soumissions et fournira des outils analytiques pour évaluer objectivement et de manière complète les offres, réduisant les erreurs humaines et optimisant la sélection des fournisseurs. Ainsi, notre projet vise à contribuer à une gestion plus rationalisée et équitable des appels d'offres, répondant aux besoins contemporains des entreprises et des fournisseurs. Structure du rapport : Étude préliminaire : Fournit un aperçu du contexte du projet, examine les solutions existantes et détaille notre propre solution et méthodologie. Initialisation du projet : Se concentre sur la phase pré-sprint, définissant les exigences fonctionnelles et non fonctionnelles, discutant des décisions technologiques et décrivant l'architecture de la plateforme. Réleases du projet : Décrit les réleases spécifiques du projet, couvrant les étapes de spécification, de conception et d'implémentation, ainsi que des résumés des principales conclusions et progrès à chaque phase.",
+        "image": "/projectImages/Leoni.png",
+        "image2": "/projectImages/Leoni-tender-call.jpg",
+        "image3": "/projectImages/team3.png",
+        "technologies": [
+          "Angular",
+          "NodeJs",
+          "Bootstrap",
+          "Springboot",
+          "Postgres"
+        ],
+        "github": "https://github.com/codeTun/",
+        "deployed": "#",
+        "bgcolor": "#8900EE",
+        "id": "5"
       },
       {
         "title": "Gaoua Gold",
         "description": "C'est une entreprise d'exploitation aurifère au Burkina Faso",
-        "body": "Gaoua Gold est un projet de site web WordPress développé pour une société d'exploitation aurifère au Burkina Faso. Ce projet a consisté à créer une plateforme en ligne qui améliore la présence numérique de l'entreprise et optimise ses processus de communication. L'objectif principal était de construire un site web convivial et visuellement attrayant qui met en valeur les opérations, les services et les réalisations de Gaoua Gold. En exploitant WordPress, nous avons veillé à ce que le site soit entièrement responsive, offrant une expérience utilisateur fluide sur toutes les plateformes. Le design et la structure du site ont été soigneusement conçus pour refléter l'identité de la marque et fournir une navigation intuitive. En plus des fonctionnalités de base, nous avons intégré des outils spécifiques pour répondre aux besoins uniques de l'industrie minière. Cela inclut la gestion des publications d'actualités, une section de présentation des projets, et un système de contact optimisé pour faciliter les demandes de renseignements. Grâce à l'attention portée aux détails et à une compréhension approfondie des besoins de Gaoua Gold, le site a été lancé avec succès, renforçant la présence en ligne de l'entreprise et soutenant ses objectifs commerciaux. Ce projet représente une synergie parfaite entre technologie et design pour créer une solution numérique complète adaptée aux besoins d'une industrie exigeante."
+        "body": "Gaoua Gold est un projet de site web WordPress développé pour une société d'exploitation aurifère au Burkina Faso. Ce projet a consisté à créer une plateforme en ligne qui améliore la présence numérique de l'entreprise et optimise ses processus de communication. L'objectif principal était de construire un site web convivial et visuellement attrayant qui met en valeur les opérations, les services et les réalisations de Gaoua Gold. En exploitant WordPress, nous avons veillé à ce que le site soit entièrement responsive, offrant une expérience utilisateur fluide sur toutes les plateformes. Le design et la structure du site ont été soigneusement conçus pour refléter l'identité de la marque et fournir une navigation intuitive. En plus des fonctionnalités de base, nous avons intégré des outils spécifiques pour répondre aux besoins uniques de l'industrie minière. Cela inclut la gestion des publications d'actualités, une section de présentation des projets, et un système de contact optimisé pour faciliter les demandes de renseignements. Grâce à l'attention portée aux détails et à une compréhension approfondie des besoins de Gaoua Gold, le site a été lancé avec succès, renforçant la présence en ligne de l'entreprise et soutenant ses objectifs commerciaux. Ce projet représente une synergie parfaite entre technologie et design pour créer une solution numérique complète adaptée aux besoins d'une industrie exigeante.",
+        "image": "/projectImages/gaoua-gold.png",
+        "image2": "/projectImages/gaoua-info.jpg",
+        "image3": "/projectImages/team3.png",
+        "technologies": ["Wordpress", "CMS"],
+        "github": "https://github.com/codeTun/",
+        "deployed": "https://gaouagoldcompany.com/",
+        "bgcolor": "#FACD01",
+        "id": "6"
       }
     ]
   },
