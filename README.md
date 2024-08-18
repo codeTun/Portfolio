@@ -12,8 +12,10 @@ Here's a brief overview of the projects included in this portfolio:
 
 1. Promolab 💻
 2. e-souq 🛒
-3. IEEE WIE 🎨
+3. IEEE WIE 🏫
 4. Meditech 🏥
+5. Leoni OTMS 📢
+6. Gaoua Gold 🏅
 
 ## 🚀 Technologies Used
 
