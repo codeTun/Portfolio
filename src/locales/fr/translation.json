@@ -59,7 +59,7 @@
         "image3": "/projectImages/weather3.png",
         "technologies": ["JavaScript", "Next Js", "Tailwind Css", "Node Js"],
         "github": "https://github.com/codeTun/e-souq",
-        "deployed": "#",
+        "deployed": "",
         "bgcolor": "var(--hl-color)",
         "id": "2"
       },
@@ -72,7 +72,7 @@
         "image3": "/projectImages/meditech.png",
         "technologies": ["JavaScript", "HTML", "CSS", "Django"],
         "github": "https://github.com/codeTun/MEDITECH",
-        "deployed": "https://mdyeates.github.io/coding-quiz/",
+        "deployed": "",
         "bgcolor": "#6c4bf4",
         "id": "3"
       },
@@ -85,7 +85,7 @@
         "image3": "/projectImages/team3.png",
         "technologies": ["HTML", "SCSS", "JavaScript"],
         "github": "https://github.com/codeTun/IEEE",
-        "deployed": "https://mdyeates.github.io/coding-quiz/",
+        "deployed": "",
         "bgcolor": "#f85781",
         "id": "4"
       },
@@ -104,7 +104,7 @@
           "Postgres"
         ],
         "github": "https://github.com/codeTun/",
-        "deployed": "#",
+        "deployed": "",
         "bgcolor": "#8900EE",
         "id": "5"
       },
