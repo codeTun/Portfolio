@@ -121,6 +121,47 @@
         "deployed": "https://gaouagoldcompany.com/",
         "bgcolor": "#FACD01",
         "id": "6"
+      },
+      {
+        "title": "DefindHer",
+        "description": "Website and browser extension for the WIE Act Competition",
+        "image": "/projectImages/defendher.png",
+        "image2": "/projectImages/defendher2.png",
+        "image3": "/projectImages/defendher-3.png",
+        "technologies": [
+          "AI",
+          "Browser Extension",
+          "Python",
+          "Next.js",
+          "Tailwind CSS",
+          "Node.js",
+          "REST API",
+          "DOM Manipulation"
+        ],
+        "body": "DefindHer is a website and browser extension designed to create safer and more respectful interactions on social media...",
+        "github": "https://github.com/codeTun/wie-act-challenge",
+        "deployed": "https://defend-her.vercel.app/",
+        "bgcolor": "#FFB800",
+        "id": "7"
+      },
+      {
+        "title": "Potential",
+        "description": "Solution for Open Data AI Abu Dhabi Competition",
+        "image": "/projectImages/potential.png",
+        "image2": "/projectImages/potential2.png",
+        "image3": "/projectImages/potential-3.png",
+        "technologies": [
+          "Azure",
+          "Next.js",
+          "Tailwind CSS",
+          "Node.js",
+          "REST API"
+        ],
+        "body": "Potential is a data-driven platform developed for the Open Data AI Abu Dhabi Competition...",
+        "github": "https://github.com/codeTun/potential",
+        "deployed": "https://potential-kegz.vercel.app/",
+        "bgcolor": "#0078D4",
+        "id": "8"
       }
     ]
   },

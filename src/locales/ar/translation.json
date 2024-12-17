@@ -120,6 +120,47 @@
         "deployed": "https://gaouagoldcompany.com/",
         "bgcolor": "#FACD01",
         "id": "6"
+      },
+      {
+        "title": "ديفندهر",
+        "description": "موقع ويب وإضافة متصفح لمسابقة WIE Act",
+        "image": "/projectImages/defindher.png",
+        "image2": "/projectImages/defindher2.png",
+        "image3": "/projectImages/defindher-3.png",
+        "technologies": [
+          "IA",
+          "Extension de navigateur",
+          "Python",
+          "Next.js",
+          "Tailwind CSS",
+          "Node.js",
+          "API REST",
+          "Manipulation du DOM"
+        ],
+        "body": "ديفندهر هو موقع ويب وإضافة متصفح تم تصميمهما لإنشاء تفاعلات أكثر أمانًا واحترامًا على وسائل التواصل الاجتماعي...",
+        "github": "https://github.com/codeTun/wie-act-challenge",
+        "deployed": "https://defend-her.vercel.app/",
+        "bgcolor": "#FFB800",
+        "id": "7"
+      },
+      {
+        "title": "بوتنشال",
+        "description": "حل لمسابقة Open Data AI أبوظبي",
+        "image": "/projectImages/potential.png",
+        "image2": "/projectImages/potential2.png",
+        "image3": "/projectImages/potential-3.png",
+        "technologies": [
+          "Azure",
+          "Next.js",
+          "Tailwind CSS",
+          "Node.js",
+          "API REST"
+        ],
+        "body": "بوتنشال هو منصة تعتمد على البيانات، تم تطويرها لمسابقة Open Data AI أبوظبي...",
+        "github": "https://github.com/codeTun/potential",
+        "deployed": "https://potential-kegz.vercel.app/",
+        "bgcolor": "#0078D4",
+        "id": "8"
       }
     ]
   },
