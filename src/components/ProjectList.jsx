@@ -14,6 +14,7 @@ import "../i18n"; // Ensure i18n is initialized
 const ProjectList = () => {
   const { t } = useTranslation();
   const projectDetails = t("projects.project-details", { returnObjects: true });
+  console.log("Number of projects loaded:", projectDetails.length);
 
   return projectDetails.map((project, index) => (
     <ProjectCard

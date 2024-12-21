@@ -20,6 +20,9 @@ importers:
       '@vercel/analytics':
         specifier: ^1.2.2
         version: 1.2.2(react@18.2.0)
+      '@vercel/speed-insights':
+        specifier: ^1.1.0
+        version: 1.1.0(react@18.2.0)
       dotenv:
         specifier: ^16.3.1
         version: 16.3.1
@@ -1547,6 +1550,29 @@ packages:
       react:
         optional: true
 
+  '@vercel/speed-insights@1.1.0':
+    resolution: {integrity: sha512-rAXxuhhO4mlRGC9noa5F7HLMtGg8YF1zAN6Pjd1Ny4pII4cerhtwSG4vympbCl+pWkH7nBS9kVXRD4FAn54dlg==}
+    peerDependencies:
+      '@sveltejs/kit': ^1 || ^2
+      next: '>= 13'
+      react: ^18 || ^19 || ^19.0.0-rc
+      svelte: '>= 4'
+      vue: ^3
+      vue-router: ^4
+    peerDependenciesMeta:
+      '@sveltejs/kit':
+        optional: true
+      next:
+        optional: true
+      react:
+        optional: true
+      svelte:
+        optional: true
+      vue:
+        optional: true
+      vue-router:
+        optional: true
+
   '@webassemblyjs/ast@1.11.6':
     resolution: {integrity: sha512-IN1xI7PwOvLPgjcf180gC1bqn3q/QaOCwYUahIOhbYUu8KA/3tw2RT/T0Gidi1l7Hhj5D/INhJxiICObqpMu4Q==}
 
@@ -2674,6 +2700,7 @@ packages:
   eslint@8.54.0:
     resolution: {integrity: sha512-NY0DfAkM8BIZDVl6PgSa1ttZbx3xHgJzSNJKYcQglem6CppHyMhRIQkBVSSMaSRnLhig3jsDbEzOjwCVt4AmmA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -7514,6 +7541,10 @@ snapshots:
   '@vercel/analytics@1.2.2(react@18.2.0)':
     dependencies:
       server-only: 0.0.1
+    optionalDependencies:
+      react: 18.2.0
+
+  '@vercel/speed-insights@1.1.0(react@18.2.0)':
     optionalDependencies:
       react: 18.2.0
 
