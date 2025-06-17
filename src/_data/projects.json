@@ -19,19 +19,6 @@
     "id": "1"
   },
   {
-    "title": "E-souq",
-    "description": "ERP solution",
-    "image": "/projectImages/esouq.png",
-    "image2": "/projectImages/esouq-desc.png",
-    "image3": "/projectImages/weather3.png",
-    "technologies": ["JavaScript", "Next Js", "Tailwind Css", "Node Js"],
-    "body": "Esouq is a versatile ERP (Enterprise Resource Planning) solution designed to streamline operations...",
-    "github": "https://github.com/codeTun/e-souq",
-    "deployed": "",
-    "bgcolor": "var(--hl-color)",
-    "id": "2"
-  },
-  {
     "title": "MEDITECH",
     "description": "Medical Platform",
     "image": "/projectImages/meditechbg.jpg",
@@ -42,7 +29,7 @@
     "github": "https://github.com/codeTun/MEDITECH",
     "deployed": "",
     "bgcolor": "#6c4bf4",
-    "id": "3"
+    "id": "2"
   },
   {
     "title": "IEEE Wie",
@@ -55,7 +42,7 @@
     "github": "https://github.com/codeTun/IEEE",
     "deployed": "",
     "bgcolor": "#f85781",
-    "id": "4"
+    "id": "3"
   },
   {
     "title": "Leoni OTMS",
@@ -74,7 +61,7 @@
     "github": "https://github.com/codeTun/",
     "deployed": "",
     "bgcolor": "#8900EE",
-    "id": "5"
+    "id": "4"
   },
   {
     "title": "Gaoua Gold",
@@ -87,10 +74,10 @@
     "github": "https://github.com/codeTun/",
     "deployed": "https://gaouagoldcompany.com/",
     "bgcolor": "#FACD01",
-    "id": "6"
+    "id": "5"
   },
   {
-    "title": "DefindHer",
+    "title": "DefendHer",
     "description": "Website and browser extension for the WIE Act Competition",
     "image": "/projectImages/defindher-1.png",
     "image2": "/projectImages/defindher-2.png",
@@ -105,11 +92,11 @@
       "REST API",
       "DOM Manipulation"
     ],
-    "body": "DefindHer is a website and browser extension designed to create safer and more respectful interactions on social media...",
+    "body": "DefendHer is a Chrome and Firefox browser extension built for the WIE ACT Challenge 2024 that automatically detects and blurs harassment or offensive language in real time. By leveraging NLP-based filtering and a customizable word list, it promotes safer online spaces, reduces visual toxicity, and fosters respectful digital interactions. Integrated seamlessly with social media platforms, it empowers users to browse with peace of mind.",
     "github": "https://github.com/codeTun/wie-act-challenge",
     "deployed": "https://defend-her.vercel.app/",
     "bgcolor": "#FFB800",
-    "id": "7"
+    "id": "6"
   },
   {
     "title": "Potential",
@@ -118,10 +105,30 @@
     "image2": "/projectImages/potential-2.png",
     "image3": "/projectImages/potential-3.png",
     "technologies": ["Azure", "Next.js", "Tailwind CSS", "Node.js", "REST API"],
-    "body": "Potential is a data-driven platform developed for the Open Data AI Abu Dhabi Competition...",
+    "body": "Potential is an intelligent web application developed for the Open Data AI Abu Dhabi Competition, achieving 6th place. Built on Microsoft Azure for scalability and cloud services, it integrates AI-driven data analysis to uncover actionable insights. Features include automated CI/CD deployment, responsive visualization dashboards, and real-time data processing to support informed decision-making.",
     "github": "https://github.com/codeTun/potential",
     "deployed": "https://potential-kegz.vercel.app/",
     "bgcolor": "#0078D4",
+    "id": "7"
+  },
+  {
+    "title": "Swish Smash Burgers",
+    "description": "Full-stack restaurant ordering platform",
+    "image": "/projectImages/swish-01.jpg",
+    "image2": "/projectImages/swish-02.jpg",
+    "image3": "/projectImages/swish-30.jpg",
+    "technologies": [
+      "Next.js",
+      "Prisma",
+      "PostgreSQL",
+      "Stripe",
+      "Tailwind CSS",
+      "CI/CD"
+    ],
+    "body": "Swish Smash Burgers is a modern full-stack web application tailored for restaurant management and customer ordering. Developed with Next.js and Prisma on PostgreSQL, it supports user authentication, table reservations, online ordering, and secure Stripe payments. The project features automated CI/CD pipelines, a responsive design with Tailwind CSS, and a custom domain deployment, delivering a seamless dining experience.",
+    "github": "https://github.com/codeTun/swish-smash-burgers",
+    "deployed": "https://swishsmashburgers.com/",
+    "bgcolor": "#E63946",
     "id": "8"
   }
 ]
