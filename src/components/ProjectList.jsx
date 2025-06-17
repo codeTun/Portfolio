@@ -15,6 +15,7 @@ const ProjectList = () => {
   const { t } = useTranslation();
   const projectDetails = t("projects.project-details", { returnObjects: true });
   console.log("Number of projects loaded:", projectDetails.length);
+  console.log("Project details:", projectDetails);
 
   return projectDetails.map((project, index) => (
     <ProjectCard
