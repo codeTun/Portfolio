@@ -203,5 +203,13 @@
     "title": "Donnez une étoile à ce projet !",
     "description": "Conçu et développé par Elazheri Iheb",
     "rights": "Tous les points de vue et le travail sont les miens"
+  },
+  "downloadResume": {
+    "selectLanguage": "Sélectionner la langue",
+    "chooseVersion": "Choisissez votre version de CV préférée",
+    "french": "Version Française",
+    "english": "Version Anglaise",
+    "downloading": "Téléchargement...",
+    "fileFormat": "Format PDF • Haute Qualité"
   }
 }

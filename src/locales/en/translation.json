@@ -203,5 +203,13 @@
     "title": "Give this project a star!",
     "description": "Designed and built by Elazheri Iheb",
     "rights": "All views and work are my own"
+  },
+  "downloadResume": {
+    "selectLanguage": "Select Language",
+    "chooseVersion": "Choose your preferred CV version",
+    "french": "French Version",
+    "english": "English Version",
+    "downloading": "Downloading...",
+    "fileFormat": "PDF Format • High Quality"
   }
 }
