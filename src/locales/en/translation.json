@@ -111,9 +111,9 @@
       {
         "title": "DefendHer",
         "description": "Website and browser extension for the WIE Act Competition",
-        "image": "/projectImages/defindher-1.png",
-        "image2": "/projectImages/defindher-2.png",
-        "image3": "/projectImages/defindher-3.png",
+        "image": "/projectImages/defendher-1.jpg",
+        "image2": "/projectImages/defendher-2.jpg",
+        "image3": "/projectImages/defendher-3.jpg",
         "technologies": [
           "AI",
           "Browser Extension",
@@ -127,15 +127,15 @@
         "body": "DefendHer is a Chrome and Firefox browser extension built for the WIE ACT Challenge 2024 that automatically detects and blurs harassment or offensive language in real time. By leveraging NLP-based filtering and a customizable word list, it promotes safer online spaces, reduces visual toxicity, and fosters respectful digital interactions. Integrated seamlessly with social media platforms, it empowers users to browse with peace of mind.",
         "github": "https://github.com/codeTun/wie-act-challenge",
         "deployed": "https://defend-her.vercel.app/",
-        "bgcolor": "#FFB800",
+        "bgcolor": "#A9C122",
         "id": "6"
       },
       {
         "title": "Potential",
         "description": "Solution for Open Data AI Abu Dhabi Competition",
-        "image": "/projectImages/potential-1.png",
-        "image2": "/projectImages/potential-2.png",
-        "image3": "/projectImages/potential-3.png",
+        "image": "/projectImages/potential-1.jpg",
+        "image2": "/projectImages/potential-2.jpg",
+        "image3": "/projectImages/potential-3.jpg",
         "technologies": [
           "Azure",
           "Next.js",

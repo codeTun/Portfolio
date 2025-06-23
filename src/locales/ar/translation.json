@@ -111,9 +111,9 @@
       {
         "title": "DefendHer",
         "description": "موقع ويب وإضافة متصفح لمسابقة WIE Act",
-        "image": "/projectImages/defindher-1.png",
-        "image2": "/projectImages/defindher-2.png",
-        "image3": "/projectImages/defindher-3.png",
+        "image": "/projectImages/defendher-1.jpg",
+        "image2": "/projectImages/defendher-2.jpg",
+        "image3": "/projectImages/defendher-3.jpg",
         "technologies": [
           "الذكاء الاصطناعي",
           "إضافة متصفح",
@@ -127,15 +127,15 @@
         "body": "DefendHer هو إضافة متصفح Chrome و Firefox تم بناؤها لتحدي WIE ACT 2024 والتي تكتشف تلقائيًا وتطمس التحرش أو اللغة المسيئة في الوقت الفعلي. من خلال الاستفادة من التصفية القائمة على معالجة اللغة الطبيعية وقائمة كلمات قابلة للتخصيص، تعزز المساحات الآمنة عبر الإنترنت وتقلل من السمية البصرية وتعزز التفاعلات الرقمية المحترمة.",
         "github": "https://github.com/codeTun/wie-act-challenge",
         "deployed": "https://defend-her.vercel.app/",
-        "bgcolor": "#FFB800",
+        "bgcolor": "#A9C122",
         "id": "6"
       },
       {
         "title": "Potential",
         "description": "حل لمسابقة Open Data AI أبوظبي",
-        "image": "/projectImages/potential-1.png",
-        "image2": "/projectImages/potential-2.png",
-        "image3": "/projectImages/potential-3.png",
+        "image": "/projectImages/potential-1.jpg",
+        "image2": "/projectImages/potential-2.jpg",
+        "image3": "/projectImages/potential-3.jpg",
         "technologies": [
           "Azure",
           "Next.js",
