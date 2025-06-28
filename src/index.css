@@ -6,15 +6,26 @@
 
 /* --- VARIABLES --- */
 :root {
-  --bg-color: #131a22;
-  --bg2-color: #232f3e19;
+  --bg-color: #101010;
+  --bg2-color: #121212;
   --hl-color: #48a3c6;
   --hl2-color: #ea5b5c;
   --text-color: #f3f3f3;
-  --secondary-text-color: #999999;
+  --secondary-text-color: #9f9f9f;
   --grey: #9f9f9f76;
   --spacing: 50px;
   --sm-spacing: 30px;
+}
+
+/* --- SMOOTH THEME TRANSITIONS --- */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+html,
+body,
+#root {
+  transition: background-color 0.3s ease;
 }
 
 /* --- ANIMATIONS --- */
@@ -135,6 +146,132 @@ a {
   animation: fadeInAnimation 0.5s ease-in;
 }
 
+/* --- FORM STYLES --- */
+.formControl {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--grey);
+  border-radius: 5px;
+  font-size: 14px;
+  color: var(--text-color);
+  background-color: transparent;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formControl:focus {
+  outline: none;
+  border-color: var(--hl-color);
+  box-shadow: 0 0 0 2px rgba(72, 163, 198, 0.2);
+}
+
+.formControl::placeholder {
+  color: var(--secondary-text-color);
+}
+
+.formError {
+  border-color: var(--hl2-color);
+}
+
+/* --- PROJECT CARD STYLES --- */
+.projectCard {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.projectTitle {
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.viewWork {
+  color: var(--text-color);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* --- CONTENT STYLES --- */
+.contentTitle {
+  color: var(--text-color);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* --- CONTACT INFO STYLES --- */
+.contactInfo {
+  padding: 20px;
+}
+
+.infoDescription {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.listInfo {
+  list-style: none;
+  padding: 0;
+}
+
+.listInfo li {
+  margin-bottom: 20px;
+}
+
+.personalContactInfo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.infoIcon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--hl-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+}
+
+.mediaWrap {
+  flex: 1;
+}
+
+.infoType {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.infoValue {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+}
+
+.infoValue a {
+  color: var(--hl-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.infoValue a:hover {
+  color: var(--hl2-color);
+}
+
 /* --- MOBILE STYLES --- */
 
 /* --- HEADER ---  */
@@ -170,10 +307,11 @@ header {
   justify-content: center;
   padding: 20px 0;
   position: relative;
+  transition: color 0.3s ease;
 }
 
 .links a:hover {
-  color: white;
+  color: var(--hl-color);
 }
 
 .links.open {
@@ -211,19 +349,23 @@ header {
   margin-left: 10px;
   display: none;
   display: block !important;
+  position: relative;
+  top: auto;
+  right: auto;
 }
 
 @media screen and (max-width: 768px) {
   .toggleMode {
-    position: fixed;
-    top: 40px;
-    right: 110px;
+    position: relative;
+    top: auto;
+    right: auto;
   }
 }
 
 .toggleIcon {
   scale: 2;
   cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .toggleIcon:hover {
@@ -296,7 +438,7 @@ footer .socialIcons {
     left: 0;
     width: 0;
     height: 1px;
-    background-color: var(--text-color);
+    background-color: var(--hl-color);
     transition: width 0.3s ease-in-out;
   }
 
@@ -311,7 +453,7 @@ footer .socialIcons {
     left: 0;
     width: 0;
     height: 1px;
-    background-color: var(--text-color);
+    background-color: var(--hl-color);
     transition: width 0.3s ease-in-out;
     width: 100%;
   }

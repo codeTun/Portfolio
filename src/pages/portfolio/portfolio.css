@@ -14,7 +14,7 @@
   margin-bottom: 20px;
   overflow: hidden;
   position: relative;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out, background-color 0.3s ease, color 0.3s ease;
   flex-direction: column;
   padding: 0 !important;
   cursor: pointer;
@@ -26,7 +26,7 @@
 }
 
 .textWrap {
-  transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out, color 0.3s ease;
   z-index: 1;
 }
 
@@ -44,15 +44,18 @@
 .tech {
   font-size: 12px;
   white-space: nowrap;
+  transition: color 0.3s ease;
 }
 
 .viewWork {
   font-size: 14px;
+  transition: color 0.3s ease;
 }
 
 .projectTitle {
   font-size: 24px;
   padding: 10px 0;
+  transition: color 0.3s ease;
 }
 
 .projectCard::before {
@@ -92,6 +95,7 @@
   padding: var(--spacing) 10px;
   margin: 0;
   margin-bottom: var(--spacing);
+  transition: background-color 0.3s ease;
 }
 
 .projectImage {
@@ -103,6 +107,7 @@
   line-height: 2;
   text-align: left;
   color: var(--secondary-text-color);
+  transition: color 0.3s ease;
 }
 
 .tech {
@@ -147,6 +152,7 @@
   padding: 5px 10px;
   border-radius: 20px;
   color: var(--hl-color);
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 /* --- MEDIA QUEIRES --- */

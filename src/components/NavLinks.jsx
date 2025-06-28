@@ -32,7 +32,7 @@ const NavLinks = () => {
         <DownloadResumeButton />
       </div>
       {/* Navigation links */}
-      <nav className={`links ${isMenuOpen ? "open" : "closed"} mr-3 md:flex`}>
+      <nav className={`links ${isMenuOpen ? "open" : "closed"} mr-3 md:flex items-center`}>
         <motion.div
           className="nav-item"
           initial={{ x: -100, opacity: 0 }}
