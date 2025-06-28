@@ -10,11 +10,17 @@ import { MdDarkMode } from "react-icons/md";
 
 const LightDarkToggle = () => {
   // State to track the current mode (light or dark)
-  const [islightMode, setLightMode] = useState(true);
+  const [islightMode, setLightMode] = useState(() => {
+    // Check localStorage for saved preference, default to dark mode (false = dark)
+    const saved = localStorage.getItem('theme');
+    return saved ? saved === 'light' : false;
+  });
 
   // Function to toggle between light and dark mode
   const toggleMode = () => {
-    setLightMode(!islightMode);
+    const newMode = !islightMode;
+    setLightMode(newMode);
+    localStorage.setItem('theme', newMode ? 'light' : 'dark');
   };
 
   // Original colors
@@ -32,11 +38,11 @@ const LightDarkToggle = () => {
 
   // Apply the selected mode's colors using CSS custom properties
   useEffect(() => {
-    const colors = !islightMode
+    const colors = islightMode
       ? {
           // Light Colors
           "--bg-color": "#ffffff",
-          " --bg2-color": "#f0f0f0",
+          "--bg2-color": "#f8f9fa",
           "--hl-color": "#007acc",
           "--hl2-color": "#ea5b5c",
           "--text-color": "#333333",
@@ -44,7 +50,7 @@ const LightDarkToggle = () => {
           "--grey": "#999999",
         }
       : {
-          // Dark Colors
+          // Dark Colors (default)
           "--bg-color": "#101010",
           "--bg2-color": "#121212",
           "--hl-color": "#48a3c6",
@@ -62,7 +68,7 @@ const LightDarkToggle = () => {
 
   return (
     <button
-      className="toggleMode mt-0"
+      className="toggleMode mt-1"
       onClick={toggleMode}
       style={{
         position: "absolute",

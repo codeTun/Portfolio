@@ -5,57 +5,110 @@
   flex-direction: column;
   align-items: center;
   margin-top: var(--spacing);
+  padding: var(--spacing) 0;
 }
 
 .aboutContainer {
   background-color: var(--bg2-color);
   padding: var(--spacing) 0;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .personalImage {
   display: flex;
   justify-content: center;
   margin-bottom: var(--spacing);
+  padding: 20px;
 }
 
-.personalImage img {
+.about-image {
   height: 250px;
   z-index: 50;
   border-radius: 250px;
-  border: 1px solid var(--hl2-color);
-  opacity: 0.5;
-  padding: 10px;
-  filter: contrast(1.2);
+  border: 2px solid var(--hl2-color);
+  opacity: 0.8;
+  padding: 8px;
+  filter: contrast(1.1) brightness(1.05);
+  transition: all 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.about-image:hover {
+  opacity: 1;
+  transform: scale(1.02);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
 }
 
 .contentContainer {
-  padding: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.contentContainer h4 {
+.about-greeting {
   color: var(--hl-color);
   font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 15px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  opacity: 0.9;
+  transition: color 0.3s ease;
 }
 
-.contentContainer h5 {
+.about-title {
   color: var(--text-color);
   font-size: 20px;
-  margin-bottom: 15px;
+  font-weight: 700;
+  margin-bottom: 20px;
   letter-spacing: -0.2px;
+  line-height: 1.2;
+  transition: color 0.3s ease;
 }
 
 .contentDescription {
   color: var(--secondary-text-color);
   letter-spacing: 0.3px;
-  line-height: 1.7;
+  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: color 0.3s ease;
+}
+
+.about-paragraph {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--secondary-text-color);
+  transition: color 0.3s ease;
+}
+
+.about-paragraph .text-hl-color {
+  font-weight: 600;
+  color: var(--hl-color);
+  transition: color 0.3s ease;
+}
+
+.about-paragraph .text-hl-color:hover {
+  color: var(--hl2-color);
+}
+
+.about-button-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .infoContainer {
   border-top: 1px solid var(--grey);
   margin-top: var(--sm-spacing);
   padding-top: var(--sm-spacing);
+  transition: border-color 0.3s ease;
 }
 
 .info {
@@ -64,6 +117,7 @@
 
 .infoContainer span {
   color: var(--text-color);
+  transition: color 0.3s ease;
 }
 
 .infoContainer p {
@@ -71,12 +125,15 @@
   display: inline-block;
   margin-left: 10px;
   margin-bottom: 10px;
+  transition: color 0.3s ease;
 }
 
 .contentContainer a {
   text-decoration: none;
   color: var(--text-color);
+  transition: color 0.3s ease;
 }
+
 .contentContainer .btn {
   margin-top: var(--sm-spacing);
 }
@@ -85,12 +142,20 @@
   font-size: 20px;
   margin-left: 5px;
   margin-right: -10px;
-  transition: transform 0.3s ease; /* Add a smooth transition */
+  transition: transform 0.3s ease;
 }
 
 @media (min-width: 595px) {
   .contentContainer {
     padding: var(--sm-spacing);
+  }
+  
+  .about-greeting {
+    font-size: 18px;
+  }
+  
+  .about-title {
+    font-size: 20px;
   }
 }
 
@@ -98,13 +163,24 @@
   .aboutContainer {
     padding: var(--spacing);
   }
+  
+  .about-greeting {
+    font-size: 18px;
+  }
+  
+  .about-title {
+    font-size: 20px;
+  }
+  
+  .about-paragraph {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 992px) {
-  .personalImage img {
+  .about-image {
     height: 430px;
     z-index: 50;
-    
   }
 
   .personalImage {
@@ -113,5 +189,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  
+  .about-greeting {
+    font-size: 18px;
+  }
+  
+  .about-title {
+    font-size: 20px;
+  }
+  
+  .about-paragraph {
+    font-size: 16px;
   }
 }

@@ -14,7 +14,10 @@ const Hero = () => {
   useEffect(() => {
     controls.start({ scale: 1.1, opacity: 1 });
     window.addEventListener("resize", handleWindowResize);
-    return () => window.removeEventListener("resize", handleWindowResize);
+    
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
   }, [controls]);
 
   useEffect(() => {
@@ -63,6 +66,7 @@ const Hero = () => {
       fontWeight: "700",
       paddingBottom: "10px",
       fontSize: windowWidth <= 768 ? "1.8em" : "2.5em",
+      textShadow: "2px 2px 4px rgba(0, 0, 0, 0.3)",
     },
   };
 

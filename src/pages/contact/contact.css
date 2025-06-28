@@ -11,41 +11,46 @@
 .contentTitle {
   color: var(--text-color);
   padding-bottom: 10px;
+  transition: color 0.3s ease;
 }
 
 .contactInfo {
-  font-size: 12px;
+  padding: 20px;
   color: var(--secondary-text-color);
   margin-bottom: var(--sm-spacing);
-  margin-left: 10px;
 }
 
 .contentDescription {
   font-size: 15px;
+  transition: color 0.3s ease;
 }
 
 .info {
   font-size: 15px;
+  transition: color 0.3s ease;
 }
 
 .infoDescription {
   margin-bottom: var(--sm-spacing);
+  transition: color 0.3s ease;
 }
 
 .personalContactInfo {
   display: flex;
   align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
 }
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 .mediaWrap {
-  border-left: 2px solid var(--grey);
-  padding-left: var(--sm-spacing);
-  padding-top: 12px;
-  padding-bottom: 12px;
+  flex: 1;
+  padding-left: 0;
+  border-left: none;
 }
 
 .formGroup {
@@ -63,11 +68,17 @@ ul {
   border-bottom: 1px solid var(--grey);
   border-radius: 1px;
   outline: transparent;
-  color: var(--grey);
+  color: var(--text-color);
+  transition: border-bottom-color 0.3s ease, color 0.3s ease, background-color 0.3s ease;
 }
 
 .formControl:focus {
   border-bottom: 1px solid var(--hl-color);
+}
+
+.formControl::placeholder {
+  color: var(--secondary-text-color);
+  transition: color 0.3s ease;
 }
 
 .formError {
@@ -85,23 +96,39 @@ textarea {
 }
 
 .icon {
-  color: var(--hl-color);
-  font-size: 28px;
+  color: white;
+  font-size: 16px;
 }
 
 .infoIcon {
-  width: var(--spacing);
+  width: 40px;
+  height: 40px;
+  background-color: var(--hl-color);
+  border-radius: 50%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
 .infoType {
   color: var(--text-color);
   font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.infoValue {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  transition: color 0.3s ease;
 }
 
 .infoValue a {
   color: var(--hl-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .contactForm {

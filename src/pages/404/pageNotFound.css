@@ -7,10 +7,12 @@
 
 .error .pageTitle {
   border-bottom-color: var(--hl2-color);
+  transition: border-bottom-color 0.3s ease;
 }
 
 .error-description {
   color: var(--hl2-color);
+  transition: color 0.3s ease;
 }
 
 .error .btn {
