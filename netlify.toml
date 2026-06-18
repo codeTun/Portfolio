@@ -1,3 +1,8 @@
+# Ensure Netlify builds with a Node version Vite 8 supports (>=20.19 / >=22.12)
+[build.environment]
+  NODE_VERSION = "22"
+
+# SPA fallback: every route serves index.html (client-side routing)
 [[redirects]]
 from = "/*"
 to = "/index.html"
