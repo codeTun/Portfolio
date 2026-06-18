@@ -8,7 +8,9 @@
   },
   "welcome": {
     "name": "Elazheri Iheb",
-    "title": "Ingénieur Logiciel"
+    "title": "Ingénieur Logiciel",
+    "viewWork": "Voir les Projets",
+    "getInTouch": "Me Contacter"
   },
   "about": {
     "welcome": "Ravi de vous rencontrer  👋🏻",
@@ -16,7 +18,7 @@
     "description1": "Aujourd'hui, je me trouve en plein dans un chapitre exaltant de mon parcours en tant que POSITION chez le titan de la technologie. Mon terrain de jeu ? L'univers captivant du",
     "highlight1": "Développement Web",
     "description2": "Ici, j'endosse mon",
-    "highlight2": "chapeau de résolution de problèmes",
+    "highlight2": "chapeau de résolution de problèmes ",
     "description3": "et je me plonge tête baissée dans des défis du monde réel, tout en poursuivant sans relâche un diplôme en",
     "highlight3": "Ingénierie Logicielle",
     "description4": "à l'ISIMM. Me voilà donc, jonglant entre des bits binaires et des énigmes de la vie réelle, tout en écrivant ma propre histoire de succès.",

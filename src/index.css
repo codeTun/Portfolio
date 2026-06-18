@@ -107,10 +107,11 @@ body {
 }
 
 .btn {
-  color: #5e2f2f;
+  color: #ffffff;
   background-color: var(--hl-color);
   border: none;
   font-size: 14px;
+  font-weight: 600;
   padding: 12px var(--sm-spacing);
   border-radius: 30px;
   margin-top: 10px;
@@ -118,6 +119,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
 }
 
 .btn:hover {
@@ -465,4 +467,44 @@ footer .socialIcons {
   .toggleMode {
     display: inline-block;
   }
+}
+
+/* --- POLISH: smooth scroll, themed scrollbar, focus visibility --- */
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--grey) var(--bg2-color);
+}
+
+img {
+  max-width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg2-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--grey);
+  border-radius: 10px;
+  border: 2px solid var(--bg2-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hl-color);
+}
+
+/* Visible focus ring for keyboard users only (accessibility) */
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--hl-color);
+  outline-offset: 3px;
 }

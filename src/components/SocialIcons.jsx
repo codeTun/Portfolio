@@ -1,5 +1,24 @@
 import { motion } from "framer-motion";
 
+// Social profiles rendered as accessible, keyboard-focusable links
+const SOCIALS = [
+  {
+    href: "https://github.com/codeTun",
+    icon: "fa-brands fa-github",
+    label: "GitHub",
+  },
+  {
+    href: "https://www.linkedin.com/in/iheb-elazheri-aa55b0262/",
+    icon: "fa-brands fa-linkedin",
+    label: "LinkedIn",
+  },
+  {
+    href: "https://www.instagram.com/itzz_iheb/",
+    icon: "fa-brands fa-instagram",
+    label: "Instagram",
+  },
+];
+
 const SocialIcons = () => {
   const styles = {
     socialIcons: {
@@ -7,11 +26,11 @@ const SocialIcons = () => {
       flexDirection: "row",
       justifyContent: "center",
       alignItems: "center",
-      position: "fixed", // Use fixed to keep it at the bottom across all scroll positions
+      position: "fixed", // Keep it pinned to the bottom across scroll positions
       left: "0",
       right: "0",
       bottom: "0",
-      width: "100%", // Ensure it spans the full width
+      width: "100%",
     },
     icon: {
       textDecoration: "none",
@@ -21,60 +40,25 @@ const SocialIcons = () => {
     },
   };
 
-  const openLinkInNewWindow = (url) => {
-    window.open(url, "_blank");
-  };
-
   return (
     <div className="socialIcons" style={styles.socialIcons}>
-      <div
-        className="icon"
-        style={styles.icon}
-        onClick={() => openLinkInNewWindow("https://github.com/codeTun")}
-      >
-        <motion.i
-          // initial={{ x: 100, y: 0, opacity: 0 }}
-          // animate={{ x: 100, y: 0, opacity: 1 }}
-          // transition={{ delay: 1.8, duration: 0.5, type: "spring" }}
-          className="fa-brands fa-github"
-          aria-hidden="true"
-          title="Elazheri Iheb' GitHub Profile"
-        ></motion.i>
-      </div>
-      <div
-        className="icon"
-        style={styles.icon}
-        onClick={() =>
-          openLinkInNewWindow(
-            "https://www.linkedin.com/in/iheb-elazheri-aa55b0262/"
-          )
-        }
-      >
-        <motion.i
-          initial={{ y1: 100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 1.7, duration: 0.5, type: "spring" }}
-          className="fa-brands fa-linkedin"
-          aria-hidden="true"
-          title="Elazheri Iheb' LinkedIn Profile"
-        ></motion.i>
-      </div>
-      <div
-        className="icon"
-        style={styles.icon}
-        onClick={() =>
-          openLinkInNewWindow("https://www.instagram.com/itzz_iheb/")
-        }
-      >
-        <motion.i
+      {SOCIALS.map((social, i) => (
+        <motion.a
+          key={social.label}
+          className="icon"
+          style={styles.icon}
+          href={social.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Elazheri Iheb's ${social.label} profile`}
+          title={`Elazheri Iheb's ${social.label} profile`}
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 1.6, duration: 0.5, type: "spring" }}
-          className="fa-brands fa-instagram"
-          aria-hidden="true"
-          title="Elazheri Iheb' Instagram Profile"
-        ></motion.i>
-      </div>
+          transition={{ delay: 1.6 + i * 0.1, duration: 0.5, type: "spring" }}
+        >
+          <i className={social.icon} aria-hidden="true"></i>
+        </motion.a>
+      ))}
     </div>
   );
 };

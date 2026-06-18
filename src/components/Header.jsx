@@ -28,7 +28,7 @@ const Header = () => {
               whileTap={{ scale: 0.9 }}
               className="logo"
               src={logo}
-              alt="EndlessByte Logo"
+              alt="Elazheri Iheb logo"
             />
           </motion.div>
         </NavLink>

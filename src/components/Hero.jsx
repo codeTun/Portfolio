@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Typewriter from "typewriter-effect";
+import { Link } from "react-router-dom";
 import landingImage from "../images/iheb.jpg";
 import SocialIcons from "./SocialIcons";
+import Button from "./Button";
 import { useTranslation } from "react-i18next";
 
 const Hero = () => {
@@ -98,6 +100,26 @@ const Hero = () => {
                   .start();
               }}
             />
+          </motion.div>
+          <motion.div
+            className="hero-cta"
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.6, duration: 0.5, ease: "easeInOut" }}
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "12px",
+              justifyContent: "center",
+              marginTop: "24px",
+            }}
+          >
+            <Link to="/portfolio">
+              <Button name={t("welcome.viewWork")} />
+            </Link>
+            <Link to="/contact">
+              <Button name={t("welcome.getInTouch")} color="var(--hl2-color)" />
+            </Link>
           </motion.div>
         </div>
         <div className="image-container">

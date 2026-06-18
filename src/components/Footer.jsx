@@ -30,8 +30,8 @@ const Footer = () => {
   });
 
   useEffect(() => {
-    // Fetch GitHub repository information
-    fetch("#")
+    // Fetch GitHub repository information (stars / forks)
+    fetch("https://api.github.com/repos/codeTun/Portfolio")
       .then((res) => res.json())
       .then((json) => {
         const { stargazers_count, forks_count } = json;
