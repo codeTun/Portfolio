@@ -168,6 +168,48 @@
         "deployed": "https://www.swishburger.fr/",
         "bgcolor": "#E63946",
         "id": "8"
+      },
+      {
+        "title": "GloreAcademy",
+        "description": "AI-powered candidate management platform for recruitment agencies",
+        "image": "/projectImages/gloreacademy.png",
+        "image2": "/projectImages/gloreacademy-2.png",
+        "image3": "/projectImages/gloreacademy-3.png",
+        "technologies": [
+          "Next.js",
+          "React",
+          "FastAPI",
+          "Prisma",
+          "PostgreSQL",
+          "Redis",
+          "OpenRouter AI",
+          "Docker"
+        ],
+        "body": "GloreAcademy is a private, enterprise-grade B2B SaaS platform that helps recruitment agencies manage their candidates from a single modern dashboard. It combines AI-assisted document generation with intelligent job matching to streamline the recruiting workflow. Developed as a confidential client solution, with a focus on automation, security and user experience.",
+        "github": "https://github.com/codeTun/",
+        "deployed": "",
+        "bgcolor": "#4338CA",
+        "id": "9"
+      },
+      {
+        "title": "TechBridge",
+        "description": "Platform for an AI & Data Science university club",
+        "image": "/projectImages/techbridge.png",
+        "image2": "/projectImages/techbridge-2.png",
+        "image3": "/projectImages/techbridge-3.png",
+        "technologies": [
+          "Next.js",
+          "React",
+          "Tailwind CSS",
+          "Prisma",
+          "PostgreSQL",
+          "JWT"
+        ],
+        "body": "TechBridge is a modern, immersive website for a university club specialized in Artificial Intelligence, Data Science and Innovation. It presents the club's projects, events and team, centralizes learning resources, and streamlines member applications and sponsor outreach. A secure admin dashboard delivers full CRUD over members, projects, events and applications, alongside light/dark mode, an MVP chatbot and a futuristic AI-inspired design.",
+        "github": "https://github.com/codeTun/",
+        "deployed": "",
+        "bgcolor": "#06B6D4",
+        "id": "10"
       }
     ]
   },

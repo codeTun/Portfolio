@@ -168,6 +168,48 @@
         "deployed": "https://www.swishburger.fr/",
         "bgcolor": "#E63946",
         "id": "8"
+      },
+      {
+        "title": "GloreAcademy",
+        "description": "Plateforme de gestion de candidats propulsée par l'IA pour agences de recrutement",
+        "image": "/projectImages/gloreacademy.png",
+        "image2": "/projectImages/gloreacademy-2.png",
+        "image3": "/projectImages/gloreacademy-3.png",
+        "technologies": [
+          "Next.js",
+          "React",
+          "FastAPI",
+          "Prisma",
+          "PostgreSQL",
+          "Redis",
+          "OpenRouter AI",
+          "Docker"
+        ],
+        "body": "GloreAcademy est une plateforme SaaS B2B privée et destinée aux entreprises, qui aide les agences de recrutement à gérer leurs candidats depuis un tableau de bord moderne et unifié. Elle combine la génération de documents assistée par l'IA et un appariement intelligent des offres pour fluidifier le processus de recrutement. Conçue comme une solution client confidentielle, axée sur l'automatisation, la sécurité et l'expérience utilisateur.",
+        "github": "https://github.com/codeTun/",
+        "deployed": "",
+        "bgcolor": "#4338CA",
+        "id": "9"
+      },
+      {
+        "title": "TechBridge",
+        "description": "Plateforme pour un club universitaire d'IA et de Data Science",
+        "image": "/projectImages/techbridge.png",
+        "image2": "/projectImages/techbridge-2.png",
+        "image3": "/projectImages/techbridge-3.png",
+        "technologies": [
+          "Next.js",
+          "React",
+          "Tailwind CSS",
+          "Prisma",
+          "PostgreSQL",
+          "JWT"
+        ],
+        "body": "TechBridge est un site web moderne et immersif pour un club universitaire spécialisé en Intelligence Artificielle, Data Science et Innovation. Il présente les projets, les événements et l'équipe du club, centralise les ressources pédagogiques et facilite les candidatures des membres et la prospection de sponsors. Un tableau de bord d'administration sécurisé offre un CRUD complet sur les membres, projets, événements et candidatures, avec mode clair/sombre, un chatbot MVP et un design futuriste inspiré de l'IA.",
+        "github": "https://github.com/codeTun/",
+        "deployed": "",
+        "bgcolor": "#06B6D4",
+        "id": "10"
       }
     ]
   },

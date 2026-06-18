@@ -168,6 +168,48 @@
         "deployed": "https://www.swishburger.fr/",
         "bgcolor": "#E63946",
         "id": "8"
+      },
+      {
+        "title": "GloreAcademy",
+        "description": "منصة لإدارة المرشحين مدعومة بالذكاء الاصطناعي لوكالات التوظيف",
+        "image": "/projectImages/gloreacademy.png",
+        "image2": "/projectImages/gloreacademy-2.png",
+        "image3": "/projectImages/gloreacademy-3.png",
+        "technologies": [
+          "Next.js",
+          "React",
+          "FastAPI",
+          "Prisma",
+          "PostgreSQL",
+          "Redis",
+          "OpenRouter AI",
+          "Docker"
+        ],
+        "body": "GloreAcademy هي منصة SaaS من نوع B2B خاصة ومخصّصة للمؤسسات، تساعد وكالات التوظيف على إدارة مرشحيها من لوحة تحكم حديثة وموحّدة. تجمع بين توليد المستندات بمساعدة الذكاء الاصطناعي والمطابقة الذكية لفرص العمل لتبسيط سير عمل التوظيف. صُمّمت كحلٍّ خاصٍّ سرّي للعملاء، مع تركيز على الأتمتة والأمان وتجربة المستخدم.",
+        "github": "https://github.com/codeTun/",
+        "deployed": "",
+        "bgcolor": "#4338CA",
+        "id": "9"
+      },
+      {
+        "title": "TechBridge",
+        "description": "منصة لنادٍ جامعي في الذكاء الاصطناعي وعلوم البيانات",
+        "image": "/projectImages/techbridge.png",
+        "image2": "/projectImages/techbridge-2.png",
+        "image3": "/projectImages/techbridge-3.png",
+        "technologies": [
+          "Next.js",
+          "React",
+          "Tailwind CSS",
+          "Prisma",
+          "PostgreSQL",
+          "JWT"
+        ],
+        "body": "TechBridge هو موقع ويب حديث وغامر لنادٍ جامعي متخصص في الذكاء الاصطناعي وعلوم البيانات والابتكار. يعرض مشاريع النادي وفعالياته وفريقه، ويجمع الموارد التعليمية في مكان واحد، ويبسّط طلبات انضمام الأعضاء واستقطاب الرعاة. توفّر لوحة تحكم إدارية آمنة عمليات CRUD كاملة على الأعضاء والمشاريع والفعاليات والطلبات، إلى جانب الوضع الفاتح/الداكن وروبوت محادثة (MVP) وتصميم مستقبلي مستوحى من الذكاء الاصطناعي.",
+        "github": "https://github.com/codeTun/",
+        "deployed": "",
+        "bgcolor": "#06B6D4",
+        "id": "10"
       }
     ]
   },
