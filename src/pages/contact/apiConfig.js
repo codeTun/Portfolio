@@ -1,5 +1,5 @@
-const endpoint = process.env.REACT_APP_API_ENDPOINT;
-const apikey = process.env.REACT_APP_ACCESS_KEY;
+const endpoint = import.meta.env.VITE_API_ENDPOINT;
+const apikey = import.meta.env.VITE_ACCESS_KEY;
 
 if (!endpoint || !apikey) {
   console.error("Environment variables are not set correctly.");

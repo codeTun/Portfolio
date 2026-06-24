@@ -175,8 +175,8 @@
         "title": "GloreAcademy",
         "description": "AI-powered candidate management platform for recruitment agencies",
         "image": "/projectImages/gloreacademy.png",
-        "image2": "/projectImages/gloreacademy-2.png",
-        "image3": "/projectImages/gloreacademy-3.png",
+        "image2": "/projectImages/gloreacademy.png",
+        "image3": "/projectImages/gloreacademy.png",
         "technologies": [
           "Next.js",
           "React",
@@ -197,8 +197,8 @@
         "title": "TechBridge",
         "description": "Platform for an AI & Data Science university club",
         "image": "/projectImages/techbridge.png",
-        "image2": "/projectImages/techbridge-2.png",
-        "image3": "/projectImages/techbridge-3.png",
+        "image2": "/projectImages/techbridge.png",
+        "image3": "/projectImages/techbridge.png",
         "technologies": [
           "Next.js",
           "React",
